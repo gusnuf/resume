@@ -4,12 +4,15 @@
   <property name="dist.file" value="grahame_murray_resume" />
 
   <property environment="env"/>
-  <property name="fop.home" value="/usr/share"/>
+  <!-- Brew on Mac OSX installed fop to /usr/local/Cellar/fop/1.1/libexec -->
+
+  <fail unless="env.FOP_HOME" message="FOP_HOME must be set" />
 
   <taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop">
     <classpath>
-      <fileset dir="${fop.home}/java">
-        <include name="*.jar"/>
+      <fileset dir="${env.FOP_HOME}">
+        <include name="build/*.jar"/>
+        <include name="lib/*.jar"/>
       </fileset>
     </classpath>
   </taskdef>
