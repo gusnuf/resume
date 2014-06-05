@@ -6,12 +6,12 @@
 
 
 <xsl:template match="/resume">
-<xsl:text disable-output-escaping="yes">
-&lt;?php
-  include("../grahame.inc");
-  printHeader();
-php?&gt;
-</xsl:text>
+
+<html>
+<head>
+  <title>Resume of <xsl:value-of select="contact/name"/></title>
+</head>
+<body>
 
 <div id="centercontent">
 
@@ -232,11 +232,10 @@ php?&gt;
 	</xsl:for-each>
 
 </div>
-<xsl:text disable-output-escaping="yes">
-&lt;?php
-  printFooter();
-php?&gt;
-</xsl:text>
+
+</body>
+</html>
+
 </xsl:template>
 
 </xsl:stylesheet>
