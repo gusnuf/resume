@@ -1,0 +1,31 @@
+<project name="resume" default="build">
+
+  <property name="dist.dir" value="dist" />
+  <property name="dist.file" value="grahame_murray_resume" />
+
+  <property environment="env"/>
+  <property name="fop.home" value="/usr/share"/>
+
+  <taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop">
+    <classpath>
+      <fileset dir="${fop.home}/java">
+        <include name="*.jar"/>
+      </fileset>
+    </classpath>
+  </taskdef>
+
+  <target name="build">
+
+    <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.php" />
+    <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt" />
+    <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo" />
+
+
+    <fop format="application/pdf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.pdf" messagelevel="ERROR" />
+    <fop format="application/rtf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.rtf" messagelevel="ERROR" />
+    <fop format="application/rtf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.doc" messagelevel="ERROR" />
+    <fop format="text/plain" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.plain" messagelevel="ERROR" />
+
+  </target>
+
+</project>
