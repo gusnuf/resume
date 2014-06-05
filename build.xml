@@ -19,7 +19,7 @@
 
   <target name="build">
 
-    <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.php" />
+    <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.html" />
     <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt" />
     <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo" />
 
