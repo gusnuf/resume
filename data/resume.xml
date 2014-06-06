@@ -4,6 +4,19 @@
 
    <datestamp>Sunday, May 4th, 2014</datestamp>
 
+   <online>
+     <site>http://grahame.com/</site>
+     <base>http://grahame.com/resume</base>
+     <prefix>grahame_murray</prefix> <!-- @TODO get this value from ant -->
+     <formats>
+     	<format extension="html">HTML</format>
+     	<format extension="pdf">PDF</format>
+     	<format extension="doc">Word</format>
+     	<format extension="txt">plain-text</format>
+     </formats>
+     <source>http://github.com/gusnuf/resume</source>
+   </online>
+
    <contact>
       <name>F. Grahame Murray</name>
       <city>Raleigh</city>
@@ -57,7 +70,7 @@
         <tasks>
           <task>Swype was acquired by Nuance!</task>
           <task>Continued the development and improvement of the Swype Connect API</task>
-          <task>Improved "visibility" of our connected services, using Graphite, statd, collectd, and umpire, giving us insight and trending data into how our application is performing and being used</task>
+          <task>Improved "visibility" of our connected services, using Graphite, statsd, collectd, and umpire, giving us insight and trending data into how our application is performing and being used</task>
           <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
           <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
           <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
@@ -265,84 +278,7 @@
             <task>Implemented Instructional Metadata IMS Metadata XML Generator tool, on a contract for Sun Microsystems</task>
          </tasks>
       </job>
-
-      <!--job>
-         <title>Student Associate</title>
-         <start_date>September 1998</start_date>
-         <end_date>December 1998</end_date>
-         <company>
-            <name>United Parcel Service</name>
-            <url>http://www.ups.com/</url>
-            <location>Timonium, MD</location>
-         </company>
-
-         <tasks>
-            <task>Maintenance of CGI-based commerce and support application</task>
-            <task>HTML coding</task>
-         </tasks>
-      </job>
-
-
-      <job>
-         <title>Software Engineer Intern</title>
-         <start_date>June 1998</start_date>
-         <end_date>August 1998</end_date>
-         <company>
-            <name>SRI International</name>
-            <url>http://www.sri.com/</url>
-            <location>Menlo Park, CA</location>
-         </company>
-
-         <projects>
-            <project>
-               <name>TappedIn</name>
-               <url>http://www.tappedin.org/</url>
-            </project>
-            <project>
-               <name>URLex</name>
-               <url>http://www.ctl.sri.com/urlex/home.jsp</url>
-            </project>
-         </projects>
-
-         <tasks>
-            <task>TAPestry Java applet maintenance and enhancements for TappedIn, an online community of educators.</task>
-            <task>Extended functionality of URLex, an online community and web-based bookmark management web application, written in Python and Javascript.</task>
-         </tasks>
-      </job>
-
-      <job>
-         <title>Student Worker</title>
-         <start_date>School Years 1995</start_date>
-         <end_date>1998</end_date>
-         <company>
-            <name>Goucher College</name>
-            <url>http://www.goucher.edu/</url>
-            <location>Towson, MD</location>
-         </company>
-
-         <tasks>
-            <task>Administered the Microsoft network, as well as Solaris and Irix UNIX servers.</task>
-            <task>Staffed the technical support/helpdesk.</task>
-            <task>Desktop IT support</task>
-            <task>Web design for some academic departments and centers.</task>
-         </tasks>
-      </job-->
-
-      <!--job>
-         <title>Site Assistant</title>
-         <start_date>Summers 1994</start_date>
-         <end_date>1997</end_date>
-         <company>
-            <name>University of Delaware</name>
-            <url>http://www.udel.edu/</url>
-            <location>Newark, DE</location>
-         </company>
-         <tasks>
-            <task>General hardware and software maintenance of PCs and Macs.</task>
-            <task>Maintained a Novell file server.</task>
-            <task>Web and multimedia development (interactive kiosks) for the College of Education and its departments.</task>
-         </tasks>
-      </job-->
+      
    </experience>
 
    <skills>
@@ -404,16 +340,16 @@
          <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
          <tool category="Version Control">Git, Subversion, CVS, Perforce, SCCS, RCS</tool>
          <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
-	 <tool category="Web UI">jQuery, YUI</tool>
+	 	 <tool category="Web UI">jQuery, YUI</tool>
          <tool category="Build">Ant, Jenkins/Hudson, Cruise Control, Maven2, Make</tool>
          <tool category="Unit Testing">py.test, JUnit, Cobetura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
-	 <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
-	 <tool category="Caching">Memcache, Redis, APC, XCache</tool>
+	 	 <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
+	 	 <tool category="Caching">Memcache, Redis, APC, XCache</tool>
          <tool category="Web/Integration Testing">Selenium, JProbe</tool>
-         <tool category="Search">Lucene, SOLR, Verity</tool>
+         <tool category="Search">ElasticSearch, SOLR, Lucene, Verity</tool>
          <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
          <tool category="MVC">Django, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
-         <tool category="Virtualization">AWS, VMWare ESX, VirtualBox, Vagrant, Xen</tool>
+         <tool category="Virtualization">AWS, Vagrant, VMWare ESX, VirtualBox, Xen</tool>
          <tool category="Text Editor">vi(m), Emacs</tool>
          <tool category="Installer">InstallShield, NSIS</tool>
          <tool category="Command Line">GNU tools, Cygwin</tool>

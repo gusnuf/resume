@@ -112,62 +112,62 @@
                 <fo:table-cell>
                     <fo:block font-size="18pt" font-weight="bold"><xsl:value-of select="contact/name"/></fo:block>
                 </fo:table-cell>
-		<fo:table-cell>
-		  <fo:block><xsl:text> </xsl:text></fo:block>
-		</fo:table-cell>
-		<fo:table-cell>
-		  <fo:block><xsl:text> </xsl:text></fo:block>
-		</fo:table-cell>
-		<fo:table-cell>
-		  <fo:block><xsl:text> </xsl:text></fo:block>
-		</fo:table-cell>
-		<fo:table-cell>
-		  <fo:block><xsl:text> </xsl:text></fo:block>
-		</fo:table-cell>
+				<fo:table-cell>
+				  <fo:block><xsl:text> </xsl:text></fo:block>
+				</fo:table-cell>
+				<fo:table-cell>
+				  <fo:block><xsl:text> </xsl:text></fo:block>
+				</fo:table-cell>
+				<fo:table-cell>
+				  <fo:block><xsl:text> </xsl:text></fo:block>
+				</fo:table-cell>
+				<fo:table-cell>
+				  <fo:block><xsl:text> </xsl:text></fo:block>
+				</fo:table-cell>
             </fo:table-row>
             <fo:table-row>
                 <fo:table-cell>
-		  <fo:block>
+		  			<fo:block>
               	    <xsl:if test="contact/street"><xsl:value-of select="contact/street"/></xsl:if>
                   </fo:block>
                 </fo:table-cell>
-             <xsl:choose>
-             <xsl:when test="contact/phone/@type='h'">
-                <fo:table-cell>
-                    <fo:block>Home:<xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-                <fo:table-cell>
-                    <fo:block><xsl:value-of select="contact/phone[@type='h']"/></fo:block>
-                </fo:table-cell>
-             </xsl:when>
-	     <xsl:otherwise>
-                <fo:table-cell>
-                  <fo:block><xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-                <fo:table-cell>
-                  <fo:block><xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-	     </xsl:otherwise>
-	     </xsl:choose>
-
-	     <xsl:choose>
-             <xsl:when test="contact/phone/@type='m'">
-                <fo:table-cell>
-                    <fo:block>Cell:<xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-                <fo:table-cell>
-                    <fo:block><xsl:value-of select="contact/phone[@type='m']"/></fo:block>
-                </fo:table-cell>
-             </xsl:when>
-	     <xsl:otherwise>
-                <fo:table-cell>
-                  <fo:block><xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-                <fo:table-cell>
-                  <fo:block><xsl:text> </xsl:text></fo:block>
-                </fo:table-cell>
-	     </xsl:otherwise>
-	     </xsl:choose>
+				 <xsl:choose>
+				 <xsl:when test="contact/phone/@type='h'">
+					<fo:table-cell>
+						<fo:block>Home:<xsl:text> </xsl:text></fo:block>
+					</fo:table-cell>
+					<fo:table-cell>
+						<fo:block><xsl:value-of select="contact/phone[@type='h']"/></fo:block>
+					</fo:table-cell>
+				 </xsl:when>
+				 <xsl:otherwise>
+						<fo:table-cell>
+						  <fo:block><xsl:text> </xsl:text></fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+						  <fo:block><xsl:text> </xsl:text></fo:block>
+						</fo:table-cell>
+				 </xsl:otherwise>
+				 </xsl:choose>
+		
+				 <xsl:choose>
+					 <xsl:when test="contact/phone/@type='m'">
+						<fo:table-cell>
+							<fo:block>Cell:<xsl:text> </xsl:text></fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+							<fo:block><xsl:value-of select="contact/phone[@type='m']"/></fo:block>
+						</fo:table-cell>
+					 </xsl:when>
+				 <xsl:otherwise>
+						<fo:table-cell>
+						  <fo:block><xsl:text> </xsl:text></fo:block>
+						</fo:table-cell>
+						<fo:table-cell>
+						  <fo:block><xsl:text> </xsl:text></fo:block>
+						</fo:table-cell>
+				 </xsl:otherwise>
+				 </xsl:choose>
             </fo:table-row>
             <fo:table-row>
                 <fo:table-cell>
@@ -197,18 +197,32 @@
             </fo:table-row>
         </fo:table-body>
     </fo:table>
-    <fo:block font-size="8pt" keep-together="always">
+    
+    <fo:block id="updated" font-size="8pt" keep-together="always">
         Last Updated: <xsl:value-of select="datestamp"/>.
     </fo:block>
-    <fo:block font-size="8pt" keep-together="always">
-        Check <fo:basic-link text-decoration="underline" external-destination="http://grahame.com/">http://grahame.com/</fo:basic-link>
-        for the most recent version, available in 
-        <fo:basic-link text-decoration="underline" external-destination="http://www.grahame.com/resume/grahame_murray_resume.htm">HTML</fo:basic-link>,
-        <fo:basic-link text-decoration="underline" external-destination="http://www.grahame.com/resume/grahame_murray_resume.pdf">PDF</fo:basic-link>, 
-        <fo:basic-link text-decoration="underline" external-destination="http://www.grahame.com/resume/grahame_murray_resume.doc">Word</fo:basic-link>, and
-        <fo:basic-link text-decoration="underline" external-destination="http://www.grahame.com/resume/grahame_murray_resume.txt">text</fo:basic-link> versions.
-    </fo:block>
 
+    <fo:block space-before="0.5cm"/>    
+    
+    <fo:block id="online" font-size="8pt">
+    	Visit <fo:basic-link text-decoration="underline"><xsl:attribute name="external-destination"><xsl:value-of select="online/site"/></xsl:attribute><xsl:value-of select="online/site"/></fo:basic-link> 
+    	for the most current version, available in
+    	<xsl:for-each select="online/formats/format">
+			<xsl:if test="position() != 1">
+				<xsl:text>, </xsl:text>
+			</xsl:if>
+    		<fo:basic-link text-decoration="underline">
+    		<xsl:attribute name="external-destination">
+				<xsl:value-of select="../../base"/>/<xsl:value-of select="../../prefix"/>.<xsl:value-of select="@extension"/>
+    		</xsl:attribute>
+    		<xsl:value-of select="."/>
+    		</fo:basic-link>
+    	</xsl:for-each> versions, or 
+    	<fo:basic-link text-decoration="underline">
+    		<xsl:attribute name="external-destination"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/>
+    	</fo:basic-link> to see the code that created this resume.
+    </fo:block>
+    
 
 
     <fo:block space-before="0.5cm"/>
