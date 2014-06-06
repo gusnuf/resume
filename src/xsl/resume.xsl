@@ -15,32 +15,13 @@
 
 <div id="centercontent">
 
-	<span style="font-size:25px; font-weight:bold"><xsl:value-of select="contact/name"/></span><br/>
-	<xsl:if test="contact/street">
-	  <xsl:value-of select="contact/street"/>, 
-	</xsl:if>
-	<xsl:value-of select="contact/city"/><xsl:text>, </xsl:text><xsl:value-of select="contact/state"/>
-	<xsl:text> </xsl:text><xsl:value-of select="contact/zip"/><br/>
-	<table cellpadding="0" cellspacing="0">
-	  <tr>
-	  	<xsl:if test="contact/phone/@type='h'">
-	    <th align="right">Home:&#160;</th>
-	    <td><xsl:value-of select="contact/phone[@type='h']"/> (h)</td>
-	    <td width="15"/>
-	    </xsl:if>
-        <xsl:if test="contact/phone/@type='m'">
-	    <th align="right">Cell:&#160;</th>
-	    <td><xsl:value-of select="contact/phone[@type='m']"/> (m)</td>
-        </xsl:if>
-	  </tr>
-	  <tr>
-	    <th align="right">Email:&#160;</th>
-	    <td><xsl:value-of select="contact/email"/></td>
-	    <td width="15"/>
-	    <th align="right">Web:&#160;</th>
-	    <td><a href="{contact/url}"><xsl:value-of select="contact/url"/></a></td>
-          </tr>
-	</table>
+	<span style="font-size:25px; font-weight:bold"><xsl:value-of select="contact/name"/></span><br/> <xsl:if test="contact/street"> <xsl:value-of
+select="contact/street"/>, </xsl:if> <xsl:value-of select="contact/city"/><xsl:text>, </xsl:text><xsl:value-of select="contact/state"/> <xsl:text>
+</xsl:text><xsl:value-of select="contact/zip"/><br/> <table cellpadding="0" cellspacing="0"> <tr> <xsl:if test="contact/phone/@type='h'"> <th
+align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h']"/> (h)</td> <td width="15"/> </xsl:if> <xsl:if test="contact/phone/@type='m'">
+<th align="right">Cell:&#160;</th> <td><xsl:value-of select="contact/phone[@type='m']"/> (m)</td> </xsl:if> </tr> <tr> <th align="right">Email:&#160;</th>
+<td><xsl:value-of select="contact/email"/></td> <td width="15"/> <th align="right">Web:&#160;</th> <td><a href="{contact/url}"><xsl:value-of
+select="contact/url"/></a></td> </tr> </table>
 
 	<hr/>
     <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="datestamp"/>.</span><br />
