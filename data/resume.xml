@@ -301,7 +301,7 @@
          <language>ColdFusion</language>
          <language>Lisp</language>
          <language>MIPS assembly</language>
-         <language vesrion="6.0">InstallShield Script</language>
+         <language version="6.0">InstallShield Script</language>
       </languages>
 
       <databases>
