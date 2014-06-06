@@ -15,7 +15,13 @@
 Email: <xsl:value-of select="contact/email"/>    Web: <xsl:value-of select="contact/url"/>
 ----------------------------------------------------
 <xsl:text>Last Updated: </xsl:text><xsl:value-of select="datestamp"/>
-Check http://grahame.com/ for the most recent version, available in HTML, PDF, Word and text.
+
+Visit <xsl:value-of select="online/site"/> for the most current version, available in <xsl:for-each select="online/formats/format">
+			<xsl:if test="position() != 1">
+				<xsl:text>, </xsl:text>
+			</xsl:if>
+    		<xsl:value-of select="."/>
+    	</xsl:for-each> versions, or <xsl:value-of select="online/source"/> to see the code that created this resume.
 
 KEYWORD SUMMARY
 <xsl:for-each select="keywords/keyword">

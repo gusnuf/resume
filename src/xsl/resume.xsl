@@ -43,9 +43,23 @@
 	</table>
 
 	<hr/>
-    <span style="font-size=8pt">Last Updated: <xsl:value-of select="datestamp"/>.</span><br />
-    <span style="font-size=8pt">Check <a href="http://grahame.com/">http://grahame.com/</a> for the most recent version, available in <a href="http://grahame.com/resume/grahame_murray_resume.htm">HTML</a>, <a href="http://grahame.com/resume/grahame_murray_resume.pdf">PDF</a>, <a href="http://grahame.com/resume/grahame_murray_resume.doc">Word</a> and <a href="http://grahame.com/resume/grahame_murray_resume.txt">text</a>.</span>
-
+    <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="datestamp"/>.</span><br />
+    <span id="online" style="font-size=8pt">
+    	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/site"/></xsl:attribute><xsl:value-of select="online/site"/></a> for the most current version, available in
+    	<xsl:for-each select="online/formats/format">
+			<xsl:if test="position() != 1">
+				<xsl:text>, </xsl:text>
+			</xsl:if>
+    		<a>
+    		<xsl:attribute name="href">
+				<xsl:value-of select="../../base"/>/<xsl:value-of select="../../prefix"/>.<xsl:value-of select="@extension"/>
+    		</xsl:attribute>
+    		<xsl:value-of select="."/>
+    		</a>
+    	</xsl:for-each> versions, or 
+    	<a><xsl:attribute name="href"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/></a> to see the code that created this resume.
+	</span>
+	
 	<p/>
 
 
