@@ -17,7 +17,25 @@
     </classpath>
   </taskdef>
 
-  <target name="build">
+  <target name="validate">
+
+	<pathconvert dirsep="/" property="xsd.file">
+		<path>
+   			<pathelement location="src/xsd/resume.xsd"/>
+		</path>
+	</pathconvert>
+
+	<xmlvalidate file="data/resume.xml" lenient="false" failonerror="true" warn="true">
+	  <attribute name="http://apache.org/xml/features/validation/schema" value="true"/>
+	  <attribute name="http://xml.org/sax/features/namespaces" value="true"/>
+	  <property
+	  name="http://apache.org/xml/properties/schema/external-noNamespaceSchemaLocation"
+	  value="${xsd.file}"/>
+	</xmlvalidate>
+  
+  </target>
+
+  <target name="build" depends="validate">
 
     <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.html" />
     <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt" />
