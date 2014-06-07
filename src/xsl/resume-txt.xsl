@@ -5,6 +5,11 @@
 <xsl:output indent="yes" method="text"/>
 
 
+<!-- These must be provided externally, probably by ant -->
+<xsl:param name="datestamp"/>
+<xsl:param name="online_prefix"/>
+
+
 <xsl:template match="/resume">
 
 <xsl:value-of select="contact/name"/> <xsl:text>
@@ -14,7 +19,7 @@
 <xsl:if test="contact/phone/@type='h'">Home: <xsl:value-of select="contact/phone[@type='h']"/></xsl:if><xsl:text>  </xsl:text><xsl:if test="contact/phone/@type='m'">Cell: <xsl:value-of select="contact/phone[@type='m']"/></xsl:if>
 Email: <xsl:value-of select="contact/email"/>    Web: <xsl:value-of select="contact/url"/>
 ----------------------------------------------------
-<xsl:text>Last Updated: </xsl:text><xsl:value-of select="datestamp"/>
+<xsl:text>Last Updated: </xsl:text><xsl:value-of select="$datestamp"/>
 
 Visit <xsl:value-of select="online/site"/> for the most current version, available in <xsl:for-each select="online/formats/format">
 			<xsl:if test="position() != 1">

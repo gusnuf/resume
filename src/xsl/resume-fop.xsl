@@ -2,6 +2,11 @@
 xmlns:fox="http://xml.apache.org/fop/extensions">
 
 
+<!-- These must be provided externally, probably by ant -->
+<xsl:param name="datestamp"/>
+<xsl:param name="online_prefix"/>
+
+
   <xsl:template match="/">
 
     <fo:root
@@ -196,7 +201,7 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
     </fo:table>
     
     <fo:block id="updated" font-size="8pt" keep-together="always">
-        Last Updated: <xsl:value-of select="datestamp"/>.
+        Last Updated: <xsl:value-of select="$datestamp"/>.
     </fo:block>
 
     <fo:block space-before="0.5cm"/>    

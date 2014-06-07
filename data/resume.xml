@@ -2,12 +2,9 @@
 
 <resume>
 
-   <datestamp>Sunday, May 4th, 2014</datestamp>
-
    <online>
      <site>http://grahame.com/</site>
      <base>http://grahame.com/resume</base>
-     <prefix>grahame_murray</prefix> <!-- @TODO get this value from ant -->
      <formats>
      	<format extension="html">HTML</format>
      	<format extension="pdf">PDF</format>
