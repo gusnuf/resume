@@ -4,13 +4,11 @@
   <xsd:element name="resume">
 	  <xsd:complexType>
 		<xsd:sequence>
-		  <xsd:element name="datestamp" type="xsd:string" maxOccurs="1"/>
 		  <xsd:element name="online" minOccurs="0" maxOccurs="1">
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="site" type="xsd:string" maxOccurs="1"/>
 			    <xsd:element name="base" type="xsd:string" maxOccurs="1"/>
-			    <xsd:element name="prefix" type="xsd:string" maxOccurs="1"/>
 				<xsd:element name="formats">
 				  <xsd:complexType>
 					<xsd:sequence>

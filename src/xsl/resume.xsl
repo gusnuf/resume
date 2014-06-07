@@ -4,6 +4,10 @@
 <xsl:output indent="yes" method="html"/>
 
 
+<!-- These must be provided externally, probably by ant -->
+<xsl:param name="datestamp"/>
+<xsl:param name="online_prefix"/>
+
 
 <xsl:template match="/resume">
 
@@ -24,7 +28,7 @@ align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h'
 select="contact/url"/></a></td> </tr> </table>
 
 	<hr/>
-    <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="datestamp"/>.</span><br />
+    <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="$datestamp"/>.</span><br />
     <span id="online" style="font-size=8pt">
     	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/site"/></xsl:attribute><xsl:value-of select="online/site"/></a> for the most current version, available in
     	<xsl:for-each select="online/formats/format">
@@ -33,7 +37,7 @@ select="contact/url"/></a></td> </tr> </table>
 			</xsl:if>
     		<a>
     		<xsl:attribute name="href">
-				<xsl:value-of select="../../base"/>/<xsl:value-of select="../../prefix"/>.<xsl:value-of select="@extension"/>
+				<xsl:value-of select="../../base"/>/<xsl:value-of select="$online_prefix"/>.<xsl:value-of select="@extension"/>
     		</xsl:attribute>
     		<xsl:value-of select="."/>
     		</a>

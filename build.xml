@@ -17,6 +17,10 @@
     </classpath>
   </taskdef>
 
+  <target name="clean">
+      <delete dir="${dist.dir}"/>
+  </target>
+
   <target name="validate">
 
 	<pathconvert dirsep="/" property="xsd.file">
@@ -37,9 +41,22 @@
 
   <target name="build" depends="validate">
 
-    <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.html" />
-    <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt" />
-    <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo" />
+    <tstamp>
+        <format property="date_string" pattern="EEEE, MMMM dd, yyyy"/>
+    </tstamp>
+
+    <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.html">
+        <param name="datestamp" expression="${date_string}"/>
+        <param name="online_prefix" expression="${dist.file}"/>
+    </xslt>
+    <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt">
+        <param name="datestamp" expression="${date_string}"/>
+        <param name="online_prefix" expression="${dist.file}"/>
+    </xslt>
+    <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo">
+        <param name="datestamp" expression="${date_string}"/>
+        <param name="online_prefix" expression="${dist.file}"/>
+    </xslt>
 
 
     <fop format="application/pdf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.pdf" messagelevel="ERROR" />
