@@ -16,9 +16,9 @@
 
    <contact>
       <name>F. Grahame Murray</name>
-      <city>Raleigh</city>
+      <city>Durham</city>
       <state>NC</state>
-      <zip>27604</zip>
+      <zip>27707</zip>
       <phone type="h">919.828.9879</phone>
       <email>jobs@grahame.com</email>
       <url>http://grahame.com/</url>
@@ -39,7 +39,7 @@
    <objective>I am looking for a full-time position as a lead, principal, or senior software (and/or systems) engineer, designing and developing interesting and challenging systems, services, and applications.</objective>
 
    <highlights>
-      <highlight>14+ years software development and design experience</highlight>
+      <highlight>15+ years software development and design experience</highlight>
       <highlight>Product development and consulting experience</highlight>
       <highlight>Depth in language, educational, and community projects</highlight>
    </highlights>
@@ -66,13 +66,15 @@
         </projects>
         <tasks>
           <task>Swype was acquired by Nuance!</task>
-          <task>Continued the development and improvement of the Swype Connect API</task>
-          <task>Improved "visibility" of our connected services, using Graphite, statsd, collectd, and umpire, giving us insight and trending data into how our application is performing and being used</task>
+          <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance</task>
+          <task>Improved "visibility" of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
           <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
           <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
           <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
-          <task>Building second API in Go, to wrap core business logic written in C</task>
+          <task>Built second API in Go, wrapping core business logic written in C, to support realtime predictions in the cloud</task>
           <task>Assumed responsibility of legacy Java/Spring language database mangement system</task>
+          <task>Built server support for on-device storefront</task>
+          <task>Deployed and support applications in Chinese datacenters</task>
         </tasks>
       </job>
       <job>
@@ -89,7 +91,7 @@
         </projects>
         <tasks>
           <task>Came on board to lead the effort of building a high-scale web-service to support tens of millions of mobile transactions per day, to enhance phones using the Swype keyboard</task>
-          <task>Built a multi-datacenter, geographically redundant, Python/WSGI web-service to support millions of write-heavy requests per day, backed by a similarly redundant Cassandra cluster</task> 
+          <task>Built a multi-datacenter, geographically redundant, Python/WSGI web-service to support millions of write-heavy requests per day, backed by a similarly redundant Cassandra cluster</task>
           <task>Hosted in Amazon Web Services, for ease of build-out and managed infrastructure, utilizing EC2, AutoScale, CloudFront, CloudWatch, S3, Route53, RDS, ElasticCache</task>
           <task>Used EC2 auto-scaling to ensure a timely response to customer demands</task>
           <task>Built a fully "DevOps" team, using PagerDuty, Nagios, Graylog, SyslogNG, and EC2, plus our stateless custom web service</task>
@@ -275,7 +277,7 @@
             <task>Implemented Instructional Metadata IMS Metadata XML Generator tool, on a contract for Sun Microsystems</task>
          </tasks>
       </job>
-      
+
    </experience>
 
    <skills>
@@ -329,9 +331,9 @@
       <tools>
          <tool category="Web Servers">nginx, uWSGI, gunicorn, Apache</tool>
          <tool category="Configuration Management">Puppet, Ansible, Chef</tool>
-         <tool category="Monitoring">Nagios, Graphite, CollectD, StatsD, Cacti, Graylog, SyslogNG</tool>
+         <tool category="Monitoring">Nagios, Graphite, CollectD, StatsD, SNMP, Cacti, Kibana, SyslogNG</tool>
          <tool category="NoSQL">Cassandra, Hadoop/HBase, MongoDB, CouchDB, Riak</tool>
-         <tool category="Reporting">Hadoop, Pentaho, Jasper, Cyrstal Reports</tool>
+         <tool category="Reporting">Spark, Hadoop, Pentaho, Jasper, Cyrstal Reports</tool>
          <tool category="Messaging">RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
          <tool category="IDE">IntelliJ IDEA, PyCharm, Eclipse, NetBeans, Xcode, Visual Studio, CodeWarrior, JBuilder</tool>
          <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
@@ -347,7 +349,7 @@
          <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
          <tool category="MVC">Django, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
          <tool category="Virtualization">AWS, Vagrant, VMWare ESX, VirtualBox, Xen</tool>
-         <tool category="Text Editor">vi(m), Emacs</tool>
+         <tool category="Text Editor">vi(m), Atom, Emacs</tool>
          <tool category="Installer">InstallShield, NSIS</tool>
          <tool category="Command Line">GNU tools, Cygwin</tool>
          <tool category="IM">Jabberd, Openfire</tool>
@@ -420,4 +422,3 @@
    </references>
 
 </resume>
-
