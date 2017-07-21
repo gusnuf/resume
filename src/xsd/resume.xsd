@@ -13,11 +13,11 @@
 				  <xsd:complexType>
 					<xsd:sequence>
 					  <xsd:element name="format" type="FormatType" maxOccurs="unbounded"/>
-					</xsd:sequence>				  
+					</xsd:sequence>
 				  </xsd:complexType>
 				</xsd:element>
 			    <xsd:element name="source" type="xsd:string" maxOccurs="1"/>
-			  </xsd:sequence>  
+			  </xsd:sequence>
 			</xsd:complexType>
   		  </xsd:element>
 		  <xsd:element name="contact">
@@ -25,36 +25,36 @@
 			  <xsd:sequence>
 			    <xsd:element name="name" type="xsd:string" maxOccurs="1"/>
 			    <xsd:element name="city" type="xsd:string" maxOccurs="1"/>
-			    <xsd:element name="state" type="xsd:string" maxOccurs="1"/>		
-			    <xsd:element name="zip" type="xsd:decimal" maxOccurs="1"/>		
+			    <xsd:element name="state" type="xsd:string" maxOccurs="1"/>
+			    <xsd:element name="zip" type="xsd:decimal" maxOccurs="1"/>
 			    <xsd:element name="phone" type="PhoneType" maxOccurs="unbounded"/>
-			    <xsd:element name="email" type="xsd:string" maxOccurs="1"/>		
-			    <xsd:element name="url" type="xsd:string" maxOccurs="1"/>		
+			    <xsd:element name="email" type="xsd:string" maxOccurs="1"/>
+			    <xsd:element name="url" type="xsd:string" maxOccurs="1"/>
 			  </xsd:sequence>
 			</xsd:complexType>
-  		  </xsd:element>			    
+  		  </xsd:element>
 		  <xsd:element name="keywords">
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="keyword" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>  
+			  </xsd:sequence>
 			</xsd:complexType>
-  		  </xsd:element>			    
+  		  </xsd:element>
 		  <xsd:element name="objective"	type="xsd:string"/>
 		  <xsd:element name="highlights">
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="highlight" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>  
+			  </xsd:sequence>
 			</xsd:complexType>
   		  </xsd:element>
 		  <xsd:element name="competencies">
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="competency" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>  
+			  </xsd:sequence>
 			</xsd:complexType>
-  		  </xsd:element>  		  
+  		  </xsd:element>
 		  <xsd:element name="experience"	type="ExperienceType"/>
 		  <xsd:element name="skills"  	type="SkillsType"/>
 		  <xsd:element name="publications"	type="PublicationsType"/>
@@ -63,9 +63,9 @@
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="reference" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>  
+			  </xsd:sequence>
 			</xsd:complexType>
-  		  </xsd:element>			    
+  		  </xsd:element>
 
 		</xsd:sequence>
 	  </xsd:complexType>
@@ -74,7 +74,7 @@
   <xsd:complexType name="ContactType">
     <xsd:sequence>
       <xsd:element name="datestamp" type="xsd:string" maxOccurs="1"/>
-    </xsd:sequence>  
+    </xsd:sequence>
   </xsd:complexType>
 
   <xsd:complexType name="ExperienceType">
@@ -86,80 +86,89 @@
             <xsd:element name="start_date" type="xsd:string"/>
             <xsd:element name="end_date" type="xsd:string"/>
             <xsd:element name="company">
-			  <xsd:complexType>
-				<xsd:sequence>
-				  <xsd:element name="name" type="xsd:string"/>
-				  <xsd:element name="url" type="xsd:string"/>
-				  <xsd:element name="location" type="xsd:string"/>
-				</xsd:sequence>				  
-			  </xsd:complexType>
-			</xsd:element>
+      			  <xsd:complexType>
+      				<xsd:sequence>
+      				  <xsd:element name="name" type="xsd:string"/>
+      				  <xsd:element name="url" type="xsd:string"/>
+      				  <xsd:element name="location" type="xsd:string"/>
+      				</xsd:sequence>
+      			  </xsd:complexType>
+      			</xsd:element>
+            <xsd:element name="org">
+      			  <xsd:complexType>
+      				<xsd:sequence>
+      				  <xsd:element name="division" type="xsd:string" minOccurs="0"/>
+      				  <xsd:element name="department" type="xsd:string" minOccurs="0"/>
+      				  <xsd:element name="team" type="xsd:string" minOccurs="0"/>
+      				</xsd:sequence>
+      			  </xsd:complexType>
+      			</xsd:element>
             <xsd:element name="projects">
 			  <xsd:complexType>
 				<xsd:sequence>
 				  <xsd:element name="project" maxOccurs="unbounded">
 					  <xsd:complexType>
-						<xsd:sequence>				  
+						<xsd:sequence>
 						  <xsd:element name="name" type="xsd:string"/>
 						  <xsd:element name="url" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-						</xsd:sequence>								  
+						</xsd:sequence>
 					  </xsd:complexType>
-				  </xsd:element>					  
-				</xsd:sequence>				  
+				  </xsd:element>
+				</xsd:sequence>
 			  </xsd:complexType>
 			</xsd:element>
             <xsd:element name="tasks">
 			  <xsd:complexType>
 				<xsd:sequence>
 				  <xsd:element name="task" type="xsd:string" maxOccurs="unbounded"/>
-				</xsd:sequence>				  
+				</xsd:sequence>
 			  </xsd:complexType>
-			</xsd:element>			
+			</xsd:element>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
-  
+
   <xsd:complexType name="SkillsType">
     <xsd:sequence>
 	<xsd:element name="languages">
 	  <xsd:complexType>
 		<xsd:sequence>
 		  <xsd:element name="language" type="VersionType" maxOccurs="unbounded"/>
-		</xsd:sequence>				  
+		</xsd:sequence>
 	  </xsd:complexType>
 	</xsd:element>
 	<xsd:element name="databases">
 	  <xsd:complexType>
 		<xsd:sequence>
 		  <xsd:element name="database" type="xsd:string" maxOccurs="unbounded"/>
-		</xsd:sequence>				  
+		</xsd:sequence>
 	  </xsd:complexType>
 	</xsd:element>
 	<xsd:element name="platforms">
 	  <xsd:complexType>
 		<xsd:sequence>
 		  <xsd:element name="platform" type="VersionType" maxOccurs="unbounded"/>
-		</xsd:sequence>				  
+		</xsd:sequence>
 	  </xsd:complexType>
-	</xsd:element>            
+	</xsd:element>
 	<xsd:element name="tools">
 	  <xsd:complexType>
 		<xsd:sequence>
 		  <xsd:element name="tool" type="CategoryType" maxOccurs="unbounded"/>
-		</xsd:sequence>				  
+		</xsd:sequence>
 	  </xsd:complexType>
-	</xsd:element>	
+	</xsd:element>
 	<xsd:element name="oses">
 	  <xsd:complexType>
 		<xsd:sequence>
 		  <xsd:element name="os" type="xsd:string" maxOccurs="unbounded"/>
-		</xsd:sequence>				  
+		</xsd:sequence>
 	  </xsd:complexType>
-	</xsd:element>	
+	</xsd:element>
     </xsd:sequence>
-  </xsd:complexType>  
+  </xsd:complexType>
 
   <xsd:complexType name="PublicationsType">
     <xsd:sequence>
@@ -190,11 +199,11 @@
 				  <xsd:element name="name" type="xsd:string"/>
 				  <xsd:element name="location" type="xsd:string"/>
 				  <xsd:element name="url" type="xsd:string"/>
-				</xsd:sequence>				  
+				</xsd:sequence>
 			  </xsd:complexType>
 			</xsd:element>
             <xsd:element name="degree" type="xsd:string" minOccurs="0" maxOccurs="1"/>
-            <xsd:element name="highlights" type="xsd:string" maxOccurs="1"/>					
+            <xsd:element name="highlights" type="xsd:string" maxOccurs="1"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -209,7 +218,7 @@
       </xsd:extension>
     </xsd:simpleContent>
   </xsd:complexType>
-  
+
   <xsd:complexType name="PhoneType">
     <xsd:simpleContent>
       <xsd:extension base="xsd:string">
@@ -218,7 +227,7 @@
       </xsd:extension>
     </xsd:simpleContent>
   </xsd:complexType>
-  
+
   <xsd:complexType name="VersionType">
     <xsd:simpleContent>
       <xsd:extension base="xsd:string">
@@ -226,7 +235,7 @@
         </xsd:attribute>
       </xsd:extension>
     </xsd:simpleContent>
-  </xsd:complexType>    
+  </xsd:complexType>
 
   <xsd:complexType name="CategoryType">
     <xsd:simpleContent>
@@ -235,6 +244,6 @@
         </xsd:attribute>
       </xsd:extension>
     </xsd:simpleContent>
-  </xsd:complexType>  
+  </xsd:complexType>
 
 </xsd:schema>
