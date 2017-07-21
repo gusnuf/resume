@@ -22,15 +22,15 @@
 	<span style="font-size:25px; font-weight:bold"><xsl:value-of select="contact/name"/></span><br/> <xsl:if test="contact/street"> <xsl:value-of
 select="contact/street"/>, </xsl:if> <xsl:value-of select="contact/city"/><xsl:text>, </xsl:text><xsl:value-of select="contact/state"/> <xsl:text>
 </xsl:text><xsl:value-of select="contact/zip"/><br/> <table cellpadding="0" cellspacing="0"> <tr> <xsl:if test="contact/phone/@type='h'"> <th
-align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h']"/> (h)</td> <td width="15"/> </xsl:if> <xsl:if test="contact/phone/@type='m'">
-<th align="right">Cell:&#160;</th> <td><xsl:value-of select="contact/phone[@type='m']"/> (m)</td> </xsl:if> </tr> <tr> <th align="right">Email:&#160;</th>
+align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h']"/></td> <td width="15"/> </xsl:if> <xsl:if test="contact/phone/@type='m'">
+<th align="right">Mobile:&#160;</th> <td><xsl:value-of select="contact/phone[@type='m']"/></td> </xsl:if> </tr> <tr> <th align="right">Email:&#160;</th>
 <td><xsl:value-of select="contact/email"/></td> <td width="15"/> <th align="right">Web:&#160;</th> <td><a href="{contact/url}"><xsl:value-of
 select="contact/url"/></a></td> </tr> </table>
 
 	<hr/>
     <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="$datestamp"/>.</span><br />
     <span id="online" style="font-size=8pt">
-    	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/site"/></xsl:attribute><xsl:value-of select="online/site"/></a> for the most current version, available in
+    	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/base"/></xsl:attribute><xsl:value-of select="online/base"/></a> for the most current version, available in
     	<xsl:for-each select="online/formats/format">
 			<xsl:if test="position() != 1">
 				<xsl:text>, </xsl:text>
@@ -41,14 +41,14 @@ select="contact/url"/></a></td> </tr> </table>
     		</xsl:attribute>
     		<xsl:value-of select="."/>
     		</a>
-    	</xsl:for-each> versions, or 
+    	</xsl:for-each> versions, or
     	<a><xsl:attribute name="href"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/></a> to see the code that created this resume.
 	</span>
-	
+
 	<p/>
 
 
-	<span class="header">KEYWORD SUMMARY</span><br />
+	<span class="header" style="font-weight:bold">KEYWORD SUMMARY</span><br />
 	<xsl:for-each select="keywords/keyword">
 	  <xsl:if test="position() != 1">
             <xsl:text>, </xsl:text>
@@ -59,37 +59,37 @@ select="contact/url"/></a></td> </tr> </table>
 
 	<p/>
 
-	
-	<span class="header">OBJECTIVE</span><br />
+
+	<span class="header" style="font-weight:bold">OBJECTIVE</span><br />
 	<xsl:value-of select="objective"/>
 
 
 	<p/>
 
 
-	<span class="header">HIGHLIGHTS</span><br />
+	<span class="header" style="font-weight:bold">HIGHLIGHTS</span><br />
 	<ul>
 	  <xsl:for-each select="highlights/highlight">
 	    <li><xsl:value-of select="."/></li>
 	  </xsl:for-each>
-	</ul>	
+	</ul>
 
 
 	<p/>
 
 
-	<span class="header">CORE COMPETENCIES</span><br/>
+	<span class="header" style="font-weight:bold">CORE COMPETENCIES</span><br/>
 	<ul>
 	  <xsl:for-each select="competencies/competency">
 	    <li><xsl:value-of select="."/></li>
 	  </xsl:for-each>
-	</ul>		
+	</ul>
 
 
 	<p/>
 
 
-	<span class="header">EXPERIENCE</span><br />
+	<span class="header" style="font-weight:bold">EXPERIENCE</span><br />
         <table cellpadding="7" cellspacing="0">
   	  <xsl:for-each select="experience/job">
 	      <xsl:variable name="colspan">
@@ -98,18 +98,23 @@ select="contact/url"/></a></td> </tr> </table>
 	          <xsl:otherwise>3</xsl:otherwise>
                 </xsl:choose>
               </xsl:variable>
-	    <tr>
-              <td>
- 	        <b><xsl:value-of select="title"/></b>, 
+	        <tr>
+            <td>
+ 	        <b><xsl:value-of select="title"/></b>,
 	        <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>
-              </td>
-	      <td>
-	        <a href="{company/url}"><xsl:value-of select="company/name"/></a> 
-	      </td>
-              <td>
+          <br/>
+          <em><xsl:for-each select="org/*">
+            <xsl:value-of select="."/>
+            <xsl:if test="position() != last()">, </xsl:if>
+          </xsl:for-each></em>
+            </td>
+	          <td>
+	             <a href="{company/url}"><xsl:value-of select="company/name"/></a>
+	          </td>
+          <td>
 	        <xsl:value-of select="company/location"/>
-              </td>
-            </tr>
+          </td>
+      </tr>
 	    <tr>
 	      <td colspan="{$colspan}" rowspan="2" valign="top">
 	        <ul>
@@ -142,11 +147,11 @@ select="contact/url"/></a></td> </tr> </table>
   	    </xsl:for-each>
 	  </table>
 	  <p/>
-	
+
 	<p/>
 
 
-	<span class="header">COMPUTER SKILLS</span><br />
+	<span class="header" style="font-weight:bold">COMPUTER SKILLS</span><br />
 	<b>Computer Languages</b>:<br />
 	<xsl:for-each select="skills/languages/language">
 	  <xsl:if test="position() != 1">
@@ -192,10 +197,10 @@ select="contact/url"/></a></td> </tr> </table>
 	  <xsl:value-of select="."/>
  	</xsl:for-each>
 
-	
+
 	<p/>
 
-	<span class="header">PUBLICATIONS</span><br />
+	<span class="header" style="font-weight:bold">PUBLICATIONS</span><br />
     <table>
 	<xsl:for-each select="publications/publication">
 	  <u><xsl:value-of select="title"/></u>
@@ -209,7 +214,7 @@ select="contact/url"/></a></td> </tr> </table>
 
     <p/>
 
-	<span class="header">EDUCATION</span><br/>
+	<span class="header" style="font-weight:bold">EDUCATION</span><br/>
 	<xsl:for-each select="education/experience">
 	  <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/><xsl:text> </xsl:text>
 	  <a href="{institution/url}"><xsl:value-of select="institution/name"/></a>
@@ -225,7 +230,7 @@ select="contact/url"/></a></td> </tr> </table>
 	<p/>
 
 
-	<span class="header">REFERENCES</span><br/>
+	<span class="header" style="font-weight:bold">REFERENCES</span><br/>
 	<xsl:for-each select="references/reference">
 	  <xsl:value-of select="."/>
 	</xsl:for-each>
