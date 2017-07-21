@@ -21,7 +21,7 @@ Email: <xsl:value-of select="contact/email"/>    Web: <xsl:value-of select="cont
 ----------------------------------------------------
 <xsl:text>Last Updated: </xsl:text><xsl:value-of select="$datestamp"/>
 
-Visit <xsl:value-of select="online/site"/> for the most current version, available in <xsl:for-each select="online/formats/format">
+Visit <xsl:value-of select="online/base"/> for the most current version, available in <xsl:for-each select="online/formats/format">
 			<xsl:if test="position() != 1">
 				<xsl:text>, </xsl:text>
 			</xsl:if>
@@ -53,7 +53,14 @@ CORE COMPETENCIES<xsl:for-each select="competencies/competency">
 
 EXPERIENCE
 <xsl:for-each select="experience/job">
-<xsl:value-of select="title"/>, <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/> <xsl:text>      </xsl:text>  <xsl:value-of select="company/name"/> <xsl:text>   </xsl:text>  <xsl:value-of select="company/location"/>
+<xsl:value-of select="title"/>, <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>
+<xsl:text>      </xsl:text>  <xsl:value-of select="company/name"/> <xsl:text>   </xsl:text>  <xsl:value-of select="company/location"/>
+<xsl:text>
+</xsl:text>
+<xsl:for-each select="org/*">
+  <xsl:value-of select="."/>
+  <xsl:if test="position() != last()">, </xsl:if>
+</xsl:for-each>
 <xsl:for-each select="tasks/task">
 * <xsl:value-of select="."/>
 </xsl:for-each>

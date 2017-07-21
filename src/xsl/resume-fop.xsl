@@ -151,7 +151,7 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
 						</fo:table-cell>
 				 </xsl:otherwise>
 				 </xsl:choose>
-		
+
 				 <xsl:choose>
 					 <xsl:when test="contact/phone/@type='m'">
 						<fo:table-cell>
@@ -199,15 +199,15 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
             </fo:table-row>
         </fo:table-body>
     </fo:table>
-    
+
     <fo:block id="updated" font-size="8pt" keep-together="always">
         Last Updated: <xsl:value-of select="$datestamp"/>.
     </fo:block>
 
-    <fo:block space-before="0.5cm"/>    
-    
+    <fo:block space-before="0.5cm"/>
+
     <fo:block id="online" font-size="8pt">
-    	Visit <fo:basic-link text-decoration="underline"><xsl:attribute name="external-destination"><xsl:value-of select="online/site"/></xsl:attribute><xsl:value-of select="online/site"/></fo:basic-link> 
+    	Visit <fo:basic-link text-decoration="underline"><xsl:attribute name="external-destination"><xsl:value-of select="online/base"/></xsl:attribute><xsl:value-of select="online/base"/></fo:basic-link>
     	for the most current version, available in
     	<xsl:for-each select="online/formats/format">
 			<xsl:if test="position() != 1">
@@ -219,12 +219,12 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
     		</xsl:attribute>
     		<xsl:value-of select="."/>
     		</fo:basic-link>
-    	</xsl:for-each> versions, or 
+    	</xsl:for-each> versions, or
     	<fo:basic-link text-decoration="underline">
     		<xsl:attribute name="external-destination"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/>
     	</fo:basic-link> to see the code that created this resume.
     </fo:block>
-    
+
 
 
     <fo:block space-before="0.5cm"/>
@@ -314,7 +314,7 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
         font-weight="bold">EXPERIENCE</fo:block>
 
     <fo:table border-width="0" padding="2">
-        <fo:table-column column-width="5cm"/>
+        <fo:table-column column-width="7cm"/>
         <fo:table-column column-width="5cm"/>
         <fo:table-column column-width="7cm"/>
 
@@ -323,20 +323,33 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
                 <fo:table-row>
                   <fo:table-cell>
                     <fo:block font-weight="bold"><xsl:value-of select="title"/></fo:block>,
-                    <fo:block font-size="7pt"><xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/></fo:block>
+                  </fo:table-cell>
+
+                  <fo:table-cell>
+                    <fo:block font-size="8pt"><xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/></fo:block>
                   </fo:table-cell>
 
                   <fo:table-cell>
                     <fo:block><xsl:value-of select="company/name"/></fo:block>
                   </fo:table-cell>
+                </fo:table-row>
 
+                <fo:table-row>
+                  <fo:table-cell number-columns-spanned="2">
+                    <fo:block font-size="7pt" font-style="italic">
+                      <xsl:for-each select="org/*">
+                        <xsl:value-of select="."/>
+                        <xsl:if test="position() != last()">, </xsl:if>
+                      </xsl:for-each>
+                    </fo:block>
+                  </fo:table-cell>
                   <fo:table-cell>
                     <fo:block><xsl:value-of select="company/location"/></fo:block>
                   </fo:table-cell>
                 </fo:table-row>
 
                 <fo:table-row>
-                  <fo:table-cell number-columns-spanned="3">
+                  <fo:table-cell number-columns-spanned="3" padding-bottom="8mm">
                       <fo:table>
                           <fo:table-column column-width="14cm"/>
                           <xsl:if test="count(projects/project) != 0">
