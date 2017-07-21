@@ -19,7 +19,7 @@
       <city>Durham</city>
       <state>NC</state>
       <zip>27707</zip>
-      <phone type="h">919.828.9879</phone>
+      <phone type="h">+1 (919) 828-9879</phone>
       <email>jobs@grahame.com</email>
       <url>http://grahame.com/</url>
    </contact>
@@ -28,15 +28,15 @@
       <keyword>DevOps</keyword>
       <keyword>Scalability</keyword>
       <keyword>Python</keyword>
+      <keyword>Docker</keyword>
       <keyword>Java</keyword>
-      <keyword>JEE</keyword>
-      <keyword>PHP</keyword>
+      <keyword>Mesos</keyword>
       <keyword>Javascript</keyword>
-      <keyword>HTML</keyword>
+      <keyword>Puppet</keyword>
       <keyword>AWS</keyword>
    </keywords>
 
-   <objective>I am looking for a full-time position as a lead, principal, or senior software (and/or systems) engineer, designing and developing interesting and challenging systems, services, and applications.</objective>
+   <objective>I am looking for a full-time position as a lead, principal, or senior software (and/or systems) engineer or architect, designing and developing interesting and challenging systems, services, and applications.</objective>
 
    <highlights>
       <highlight>15+ years software development and design experience</highlight>
@@ -47,26 +47,67 @@
    <competencies>
       <competency>High-scale web application and service development and deployment</competency>
       <competency>Application design and modeling</competency>
-      <competency>Presentation layer coding and scripting (HTML, JSP, Python, PHP, JavaScript, XHR)</competency>
+      <competency>Systems architecture and design</competency>
    </competencies>
 
    <experience>
+     <job>
+       <title>Senior Principal Software Engineer</title>
+       <start_date>September 2016</start_date>
+       <end_date>Present</end_date>
+       <company>
+         <name>Nuance Communications</name>
+         <url>http://www.nuance.com/</url>
+         <location>Durham, NC</location>
+       </company>
+       <org>
+         <division>Mobile division</division>
+         <department>Hosted Operations</department>
+         <team>Platform team</team>
+       </org>
+       <projects>
+         <project><name>Mobile Compute Platform</name></project>
+         <project><name>Mobile "Visibility" stack</name></project>
+         <project><name>Jenkins CI/CD pipelines</name></project>
+         <project><name>Swype Connect</name></project>
+       </projects>
+       <tasks>
+         <task>Swype's Connect Operations team moved to Mobile's Hosting group</task>
+         <task>Remained in 1st tier on-call rotation for Swype Connect</task>
+         <task>Used Foreman for system management and provisioning on bare metal, ESX, and Azure instances</task>
+         <task>Integrated Katello for management of system and application content across all datacenters</task>
+         <task>Rolled out FreeIPA to centrally manage SSL certificates, Kerberos, DNS, system auth (sssd), and application auth</task>
+         <task>Designed and built proof-of-concept multi-tenant compute platform using Mesos, Marathon, Consul, Calico, HAProxy and Docker to support auto-scaling and blue-green deployments of microservices</task>
+         <task>Architected a solution to provide applications and systems "Visibility" to our customers using ELK for logs, Graphite for metrics, and Sensu for alerts</task>
+         <task>Built and maintained centralized, per-datacenter, secure, multi-tenant, ELK-stack clusters for "Visibility" using Elasticsearch, Kibana, Logstash, Sentinl, and ReadonlyREST</task>
+         <task>Deployed Jenkins 2.0 integrated with GitLab for CI/CD and constructed Groovy pipelines to build all our RPMs, Docker images, and Puppet modules</task>
+         <task>Made and/or used rspec-tested Puppet 4 modules to deploy all of the above</task>
+         <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, selinux, DNS, and metrics</task>
+         <task>Setup a CI/CD pipeline to package each customer's "Visibility" configurations (Kibana dashboards, Logstash configs, and Grafana dashboards) and install them on the appropriate clusters</task>
+         <task>Documented our platforms and stacks, evangelized them to our customers, and assisted with customer on-boarding</task>
+       </tasks>
+     </job>
       <job>
         <title>Principal Software Engineer</title>
         <start_date>January 2012</start_date>
-        <end_date>Present</end_date>
+        <end_date>September 2016</end_date>
         <company>
           <name>Nuance Communications</name>
           <url>http://www.nuance.com/</url>
           <location>Durham, NC</location>
         </company>
+        <org>
+          <division>Mobile division</division>
+          <department>TextIO R&amp;D</department>
+          <team>Connect Operations team</team>
+        </org>
         <projects>
           <project><name>Swype Connect</name></project>
           <project><name>Language Lab</name></project>
         </projects>
         <tasks>
           <task>Swype was acquired by Nuance!</task>
-          <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance</task>
+          <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance, allowing us to scale to hundreds of millions users</task>
           <task>Improved "visibility" of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
           <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
           <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
@@ -86,6 +127,10 @@
           <url>http://www.swype.com/</url>
           <location>Durham, NC</location>
         </company>
+        <org>
+          <department>Engineering</department>
+          <team>Connect Operations team</team>
+        </org>
         <projects>
           <project><name>Swype Connect</name></project>
         </projects>
@@ -106,10 +151,13 @@
             <url>http://www.bbhmedia.com/</url>
             <location>Raleigh, NC</location>
          </company>
+         <org>
+           <department>Engineering team</department>
+         </org>
          <projects>
-			<project>
-				<name>Redesign of websites using Zend Framework</name>
-			</project>
+      			<project>
+      				<name>Redesign of websites using Zend Framework</name>
+      			</project>
             <project>
                <name>JEE(J2EE) Content Management System</name>
             </project>
@@ -124,16 +172,16 @@
             </project>
          </projects>
          <tasks>
-			<task>Architected and developed and new website platform; moving all high-volume sites into a centralized, load-balanced, three-tier, standardized codebase using jQuery, PHP on Zend Framework, SOAP, JPA, EJB3, MySQL, and Lucene</task>
-			<task>Built a web-service-exposed, JEE middleware to power customer self-service and management portal using JPA, EJB3, SOAP, and MySQL</task>
+      			<task>Architected and developed and new website platform; moving all high-volume sites into a centralized, load-balanced, three-tier, standardized codebase using jQuery, PHP on Zend Framework, SOAP, JPA, EJB3, MySQL, and Lucene</task>
+      			<task>Built a web-service-exposed, JEE middleware to power customer self-service and management portal using JPA, EJB3, SOAP, and MySQL</task>
             <task>Architected, designed, and developed a scalable, clustered, high-availability, J2EE-based content authoring and management system using JBoss, Hibernate, JSP2, XSLT, and SQL Server</task>
             <task>Designed, optimized, and normalized all major business systems' database schemas</task>
-			<task>Developed custom content management system using JBoss, EJB, Struts, Velocity, JSP, JSTL, and PostgreSQL</task>
+			      <task>Developed custom content management system using JBoss, EJB, Struts, Velocity, JSP, JSTL, and PostgreSQL</task>
             <task>Made heavy use of DHTML and JavaScript for both front-facing and internal applications, including remote scripting and AJAX</task>
             <task>Built and extended a custom PHP-based CMS system for e-zine publication</task>
             <task>Wrote functional, integration, and unit tests</task>
             <task>Administered CruiseControl and Hudson continuous integration and build systems</task>
-			<task>Mentored junior and new engineering hires</task>
+			      <task>Mentored junior and new engineering hires</task>
             <task>Documented requirements for outsourced projects</task>
             <task>Designed and built internal web applications to automate internal business functions, such as content publishing, indexing, and search</task>
             <task>Built international, multi-currency money management system, including automated thirty-party import and international credit card processing</task>
@@ -152,7 +200,10 @@
             <url>http://www.sun.com/</url>
             <location>Menlo Park, CA</location>
          </company>
-
+         <org>
+           <division>Internal Support</division>
+           <department>Developer Web Services</department>
+         </org>
          <projects>
             <project>
                <name>Java Community Process</name>
@@ -181,7 +232,9 @@
             <url>http://www.irvine.org/</url>
             <location>San Francisco, CA</location>
          </company>
-
+         <org>
+           <team>Systems Engineering team</team>
+         </org>
          <projects>
             <project>
                <name>Coral Connect</name>
@@ -205,7 +258,9 @@
             <url>http://www.liquidthinking.com/</url>
             <location>San Francisco, CA</location>
          </company>
-
+         <org>
+           <team>Systems Engineering team</team>
+         </org>
          <projects>
             <project>
                <name>Leap Track</name>
@@ -243,7 +298,10 @@
             <url>http://www.sri.com/</url>
             <location>Menlo Park, CA</location>
          </company>
-
+         <org>
+           <division>Policy division</division>
+           <department>Center for Technology in Learning</department>
+         </org>
          <projects>
             <project>
                <name>TeamLab</name>
@@ -285,15 +343,17 @@
          <language version="2.x">Python</language>
          <language version="1.5">Java</language>
          <language version="1.2">Go (golang)</language>
+         <language>Javascript</language>
+         <language>Ruby</language>
          <language version="2.0">JSP &amp; JSTL/EL</language>
+         <language>Scala</language>
          <language>XML</language>
          <language version="4.0">PHP</language>
          <language version="4.0">DHTML &amp; XHTML</language>
          <language>Groovy</language>
          <language>XSLT &amp; FO/P</language>
          <language version="5.6">PERL</language>
-         <language>Javascript</language>
-         <language>bash</language>
+         <language>Bash</language>
          <language>Velocity</language>
          <language>i18n</language>
          <language>C &amp; C++</language>
@@ -306,7 +366,7 @@
       <databases>
          <database>Cassandra</database>
          <database>MongoDB</database>
-         <database>MySQL</database>
+         <database>MySQL/Maria</database>
          <database>PostgreSQL</database>
          <database>MS SQL</database>
          <database>Oracle</database>
@@ -317,10 +377,11 @@
       </databases>
 
       <platforms>
+         <platform>Mesos</platform>
          <platform version="4.0+">JBoss</platform>
          <platform version="5.0+">Tomcat</platform>
-	 <platform version="1.7+">Zend Framework</platform>
-	 <platform version="2.0+">Spring</platform>
+	       <platform version="1.7+">Zend Framework</platform>
+	       <platform version="2.0+">Spring</platform>
          <platform>Resin</platform>
          <platform version="4.0">ColdFusion</platform>
          <platform version="6.0">Vignette</platform>
@@ -329,26 +390,32 @@
       </platforms>
 
       <tools>
-         <tool category="Web Servers">nginx, uWSGI, gunicorn, Apache</tool>
-         <tool category="Configuration Management">Puppet, Ansible, Chef</tool>
-         <tool category="Monitoring">Nagios, Graphite, CollectD, StatsD, SNMP, Cacti, Kibana, SyslogNG</tool>
+         <tool category="Web Servers">nginx, haproxy, uWSGI, gunicorn, Apache</tool>
+         <tool category="Provisioning">Foreman, Cobbler, AWS CloudFormation, Azure Templates</tool>
+         <tool category="Container">Docker, Mesos, Marathon</tool>
+         <tool category="Virtual Network">Calico, Flannel, OpenVSwitch</tool>
+         <tool category="Service Discovery">Consul, Zookeeper, Etcd, MesosDNS</tool>
+         <tool category="Configuration Management">Puppet, MCollective, Ansible, Chef</tool>
+         <tool category="Search">ElasticSearch, Kibana, Logstash, ReadonlyREST, SOLR, Lucene, Verity</tool>
+         <tool category="Monitoring">Sensu, Nagios, SNMP, Sentinl, Cacti, SyslogNG</tool>
+         <tool category="Metrics">Graphite, Carbon, Collectd, Statsd, Bucky</tool>
+         <tool category="Identity/Auth">FreeIPA, OpenLDAP, OpenID, OAuth</tool>
          <tool category="NoSQL">Cassandra, Hadoop/HBase, MongoDB, CouchDB, Riak</tool>
-         <tool category="Reporting">Spark, Hadoop, Pentaho, Jasper, Cyrstal Reports</tool>
+         <tool category="Reporting">Spark, Hadoop, Pentaho, Jasper, Crystal Reports</tool>
          <tool category="Messaging">RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
          <tool category="IDE">IntelliJ IDEA, PyCharm, Eclipse, NetBeans, Xcode, Visual Studio, CodeWarrior, JBuilder</tool>
          <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
          <tool category="Version Control">Git, Subversion, CVS, Perforce, SCCS, RCS</tool>
          <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
-	 	 <tool category="Web UI">jQuery, YUI</tool>
+	 	     <tool category="Web UI">jQuery, YUI</tool>
          <tool category="Build">Ant, Jenkins/Hudson, Cruise Control, Maven2, Make</tool>
          <tool category="Unit Testing">py.test, JUnit, Cobetura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
-	 	 <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
-	 	 <tool category="Caching">Memcache, Redis, APC, XCache</tool>
+	 	     <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
+	 	     <tool category="Caching">Redis, Memcache, APC, XCache</tool>
          <tool category="Web/Integration Testing">Selenium, JProbe</tool>
-         <tool category="Search">ElasticSearch, SOLR, Lucene, Verity</tool>
          <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
-         <tool category="MVC">Django, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
-         <tool category="Virtualization">AWS, Vagrant, VMWare ESX, VirtualBox, Xen</tool>
+         <tool category="MVC">Django, Ember, Angular, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
+         <tool category="Virtualization">AWS, Vagrant, Azure, VMWare ESX, VirtualBox, Xen</tool>
          <tool category="Text Editor">vi(m), Atom, Emacs</tool>
          <tool category="Installer">InstallShield, NSIS</tool>
          <tool category="Command Line">GNU tools, Cygwin</tool>
