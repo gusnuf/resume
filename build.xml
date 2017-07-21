@@ -13,6 +13,9 @@
       <fileset dir="${env.FOP_HOME}">
         <include name="build/*.jar"/>
         <include name="lib/*.jar"/>
+        <include name="libexec/build/*.jar"/>
+        <include name="libexec/fop/build/*.jar"/>
+        <include name="libexec/fop/lib/*.jar"/>
       </fileset>
     </classpath>
   </taskdef>
@@ -25,7 +28,7 @@
 
 	<pathconvert dirsep="/" property="xsd.file">
 		<path>
-   			<pathelement location="src/xsd/resume.xsd"/>
+ 			<pathelement location="src/xsd/resume.xsd"/>
 		</path>
 	</pathconvert>
 
@@ -36,26 +39,26 @@
 	  name="http://apache.org/xml/properties/schema/external-noNamespaceSchemaLocation"
 	  value="${xsd.file}"/>
 	</xmlvalidate>
-  
+
   </target>
 
   <target name="build" depends="validate">
 
     <tstamp>
-        <format property="date_string" pattern="EEEE, MMMM dd, yyyy"/>
+      <format property="date_string" pattern="EEEE, MMMM dd, yyyy"/>
     </tstamp>
 
     <xslt in="data/resume.xml" style="src/xsl/resume.xsl" out="${dist.dir}/${dist.file}.html">
-        <param name="datestamp" expression="${date_string}"/>
-        <param name="online_prefix" expression="${dist.file}"/>
+      <param name="datestamp" expression="${date_string}"/>
+      <param name="online_prefix" expression="${dist.file}"/>
     </xslt>
     <xslt in="data/resume.xml" style="src/xsl/resume-txt.xsl" out="${dist.dir}/${dist.file}.txt">
-        <param name="datestamp" expression="${date_string}"/>
-        <param name="online_prefix" expression="${dist.file}"/>
+      <param name="datestamp" expression="${date_string}"/>
+      <param name="online_prefix" expression="${dist.file}"/>
     </xslt>
     <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo">
-        <param name="datestamp" expression="${date_string}"/>
-        <param name="online_prefix" expression="${dist.file}"/>
+      <param name="datestamp" expression="${date_string}"/>
+      <param name="online_prefix" expression="${dist.file}"/>
     </xslt>
 
 
