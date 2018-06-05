@@ -189,7 +189,7 @@ select="contact/url"/></a></td> </tr> </table>
 
 	<p/>
 
-	<b>OSes</b>:<br />
+	<b>Operating Systems</b>:<br />
 	<xsl:for-each select="skills/oses/os">
 	  <xsl:if test="position() != 1">
             <xsl:text>, </xsl:text>

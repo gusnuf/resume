@@ -56,6 +56,10 @@
       <param name="datestamp" expression="${date_string}"/>
       <param name="online_prefix" expression="${dist.file}"/>
     </xslt>
+    <xslt in="data/resume.xml" style="src/xsl/resume-md.xsl" out="${dist.dir}/${dist.file}.md">
+      <param name="datestamp" expression="${date_string}"/>
+      <param name="online_prefix" expression="${dist.file}"/>
+    </xslt>
     <xslt in="data/resume.xml" style="src/xsl/resume-fop.xsl" out="${dist.dir}/${dist.file}.fo">
       <param name="datestamp" expression="${date_string}"/>
       <param name="online_prefix" expression="${dist.file}"/>
