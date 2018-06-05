@@ -3,25 +3,25 @@
 <resume>
 
    <online>
-     <site>http://grahame.com/</site>
-     <base>http://grahame.com/resume</base>
+     <site>https://grahame.com</site>
+     <base>https://grahame.com/resume</base>
      <formats>
      	<format extension="html">HTML</format>
      	<format extension="pdf">PDF</format>
      	<format extension="doc">Word</format>
      	<format extension="txt">plain-text</format>
      </formats>
-     <source>http://github.com/gusnuf/resume</source>
+     <source>https://github.com/gusnuf/resume</source>
    </online>
 
    <contact>
       <name>F. Grahame Murray</name>
-      <city>Durham</city>
+      <city>Raleigh</city>
       <state>NC</state>
-      <zip>27707</zip>
+      <zip>27601</zip>
       <phone type="h">+1 (919) 828-9879</phone>
       <email>jobs@grahame.com</email>
-      <url>http://grahame.com/</url>
+      <url>https://grahame.com</url>
    </contact>
 
    <keywords>
@@ -39,14 +39,15 @@
    <objective>I am looking for a full-time position as a lead, principal, or senior software (and/or systems) engineer or architect, designing and developing interesting and challenging systems, services, and applications.</objective>
 
    <highlights>
-      <highlight>15+ years software development and design experience</highlight>
+      <highlight>15+ years software development and operations experience</highlight>
+      <highlight>A highly curious generalist</highlight>
       <highlight>Product development and consulting experience</highlight>
       <highlight>Depth in language, educational, and community projects</highlight>
    </highlights>
 
    <competencies>
-      <competency>High-scale web application and service development and deployment</competency>
-      <competency>Application design and modeling</competency>
+      <competency>High-scale web application and service development</competency>
+      <competency>Combined development, deployment, and operations</competency>
       <competency>Systems architecture and design</competency>
    </competencies>
 
@@ -61,29 +62,34 @@
          <location>Durham, NC</location>
        </company>
        <org>
-         <division>Mobile division</division>
-         <department>Hosted Operations</department>
-         <team>Platform team</team>
+         <division>Automotive division</division>
+         <department>Cloud Reliability Engineering</department>
+         <team>Infrastructure team</team>
        </org>
        <projects>
          <project><name>Mobile Compute Platform</name></project>
          <project><name>Mobile "Visibility" stack</name></project>
-         <project><name>Jenkins CI/CD pipelines</name></project>
+         <project><name>Mobile Shared and Core Services</name></project>
+         <project><name>Jenkins 2.0 CI/CD pipelines</name></project>
+         <project><name>Kubernetes Sensu Checks</name></project>
          <project><name>Swype Connect</name></project>
        </projects>
        <tasks>
-         <task>Swype's Connect Operations team moved to Mobile's Hosting group</task>
+         <task>Swype's Connect Operations team moved to the hosting group for the Mobile division, which later became to the new Automotive division</task>
          <task>Remained in 1st tier on-call rotation for Swype Connect</task>
-         <task>Used Foreman for system management and provisioning on bare metal, ESX, and Azure instances</task>
+         <task>Implemented Foreman for system management and provisioning of bare metal, ESX, and Azure instances</task>
+         <task>Deployed infrastructure world-wide in Azure using purpose-built and reusable Terraform modules</task>
          <task>Integrated Katello for management of system and application content across all datacenters</task>
          <task>Rolled out FreeIPA to centrally manage SSL certificates, Kerberos, DNS, system auth (sssd), and application auth</task>
          <task>Designed and built proof-of-concept multi-tenant compute platform using Mesos, Marathon, Consul, Calico, HAProxy and Docker to support auto-scaling and blue-green deployments of microservices</task>
-         <task>Architected a solution to provide applications and systems "Visibility" to our customers using ELK for logs, Graphite for metrics, and Sensu for alerts</task>
-         <task>Built and maintained centralized, per-datacenter, secure, multi-tenant, ELK-stack clusters for "Visibility" using Elasticsearch, Kibana, Logstash, Sentinl, and ReadonlyREST</task>
-         <task>Deployed Jenkins 2.0 integrated with GitLab for CI/CD and constructed Groovy pipelines to build all our RPMs, Docker images, and Puppet modules</task>
+         <task>Architected a solution to provide applications and systems "Visibility" for our customers using ELK for logs, Graphite for metrics, and Sensu for alerts</task>
+         <task>Built and maintained centralized, per-datacenter, secure, multi-tenant, ELK-stack clusters for "Visibility" using Elasticsearch, Kibana, Logstash, ElastAlert, and ReadonlyREST</task>
+         <task>Created go app that generated Sensu checks for services running inside Kubernetes, querying API for services annotated with configmaps that describe alert thresholds</task>
+         <task>Deployed Jenkins 2.0 integrated with GitLab for CICD.  Built shared pipelines (as code) to build all our RPMs, Docker images, and Puppet modules</task>
          <task>Made and/or used rspec-tested Puppet 4 modules to deploy all of the above</task>
          <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, selinux, DNS, and metrics</task>
-         <task>Setup a CI/CD pipeline to package each customer's "Visibility" configurations (Kibana dashboards, Logstash configs, and Grafana dashboards) and install them on the appropriate clusters</task>
+         <task>Used Packer to bake Azure images for faster provisioning</task>
+         <task>Setup a CI/CD pipeline to package each customer's "visibility" configurations (Kibana dashboards, Logstash configs, ElastAlert rules, and Grafana dashboards) and install them on the appropriate clusters</task>
          <task>Documented our platforms and stacks, evangelized them to our customers, and assisted with customer on-boarding</task>
        </tasks>
      </job>
@@ -108,7 +114,7 @@
         <tasks>
           <task>Swype was acquired by Nuance!</task>
           <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance, allowing us to scale to hundreds of millions users</task>
-          <task>Improved "visibility" of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
+          <task>Improved visibility of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
           <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
           <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
           <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
@@ -139,7 +145,7 @@
           <task>Built a multi-datacenter, geographically redundant, Python/WSGI web-service to support millions of write-heavy requests per day, backed by a similarly redundant Cassandra cluster</task>
           <task>Hosted in Amazon Web Services, for ease of build-out and managed infrastructure, utilizing EC2, AutoScale, CloudFront, CloudWatch, S3, Route53, RDS, ElasticCache</task>
           <task>Used EC2 auto-scaling to ensure a timely response to customer demands</task>
-          <task>Built a fully "DevOps" team, using PagerDuty, Nagios, Graylog, SyslogNG, and EC2, plus our stateless custom web service</task>
+          <task>Built a true DevOps team, using PagerDuty, Nagios, Graylog, SyslogNG, and EC2, plus our stateless custom web service that we both developed and operated in Production</task>
         </tasks>
       </job>
       <job>
@@ -377,6 +383,7 @@
       </databases>
 
       <platforms>
+         <platform>Kubernetes</platform>
          <platform>Mesos</platform>
          <platform version="4.0+">JBoss</platform>
          <platform version="5.0+">Tomcat</platform>
@@ -391,13 +398,13 @@
 
       <tools>
          <tool category="Web Servers">nginx, haproxy, uWSGI, gunicorn, Apache</tool>
-         <tool category="Provisioning">Foreman, Cobbler, AWS CloudFormation, Azure Templates</tool>
-         <tool category="Container">Docker, Mesos, Marathon</tool>
+         <tool category="Provisioning">Foreman, Cobbler, Terraform, Packer, AWS CloudFormation, Azure Templates</tool>
+         <tool category="Container">Docker, Mesos, Kubernetes, Marathon</tool>
          <tool category="Virtual Network">Calico, Flannel, OpenVSwitch</tool>
          <tool category="Service Discovery">Consul, Zookeeper, Etcd, MesosDNS</tool>
          <tool category="Configuration Management">Puppet, MCollective, Ansible, Chef</tool>
-         <tool category="Search">ElasticSearch, Kibana, Logstash, ReadonlyREST, SOLR, Lucene, Verity</tool>
-         <tool category="Monitoring">Sensu, Nagios, SNMP, Sentinl, Cacti, SyslogNG</tool>
+         <tool category="Search">ElasticSearch, Kibana, Logstash, ElastAlert, ReadonlyREST, SOLR, Lucene, Verity</tool>
+         <tool category="Monitoring">Sensu, Nagios, SNMP, Cacti, SyslogNG</tool>
          <tool category="Metrics">Graphite, Carbon, Collectd, Statsd, Bucky</tool>
          <tool category="Identity/Auth">FreeIPA, OpenLDAP, OpenID, OAuth</tool>
          <tool category="NoSQL">Cassandra, Hadoop/HBase, MongoDB, CouchDB, Riak</tool>
@@ -408,7 +415,7 @@
          <tool category="Version Control">Git, Subversion, CVS, Perforce, SCCS, RCS</tool>
          <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
 	 	     <tool category="Web UI">jQuery, YUI</tool>
-         <tool category="Build">Ant, Jenkins/Hudson, Cruise Control, Maven2, Make</tool>
+         <tool category="Build">Ant, Jenkins, Hudson, Cruise Control, Maven2, Make</tool>
          <tool category="Unit Testing">py.test, JUnit, Cobetura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
 	 	     <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
 	 	     <tool category="Caching">Redis, Memcache, APC, XCache</tool>
