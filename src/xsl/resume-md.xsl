@@ -35,7 +35,10 @@ type: page
 <xsl:text>
 * * *
 </xsl:text>
-<xsl:text>Last Updated on </xsl:text><xsl:value-of select="$datestamp"/>.  Visit <xsl:value-of select="online/base"/> for the most current version or <xsl:value-of select="online/source"/> to see the code that created this resume.
+<xsl:text>Last Updated on </xsl:text><xsl:value-of select="$datestamp"/>.  Also available in <xsl:for-each select="online/formats/format">
+  <xsl:if test="position() != 1"><xsl:text>, </xsl:text></xsl:if>
+  [<xsl:value-of select="."/>](<xsl:value-of select="../../base"/>/<xsl:value-of select="$online_prefix"/>.<xsl:value-of select="@extension"/>)</xsl:for-each>.
+Visit <xsl:value-of select="online/source"/> to see the code that created this resume.
 <xsl:text>
 * * *
 </xsl:text>
