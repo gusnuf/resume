@@ -215,7 +215,7 @@ xmlns:fox="http://xml.apache.org/fop/extensions">
 			</xsl:if>
     		<fo:basic-link text-decoration="underline">
     		<xsl:attribute name="external-destination">
-				<xsl:value-of select="../../base"/>/<xsl:value-of select="../../prefix"/>.<xsl:value-of select="@extension"/>
+				<xsl:value-of select="../../base"/>/<xsl:value-of select="$online_prefix"/>.<xsl:value-of select="@extension"/>
     		</xsl:attribute>
     		<xsl:value-of select="."/>
     		</fo:basic-link>
