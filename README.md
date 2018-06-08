@@ -2,7 +2,7 @@ resume
 * * *
 
 Grahame Murray's resume, generated in multiple formats
-
+[![Build Status](https://travis-ci.org/gusnuf/resume.svg?branch=master)](https://travis-ci.org/gusnuf/resume)
 
 ### Dependencies
 ant and fop are required
