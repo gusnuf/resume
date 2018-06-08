@@ -2,9 +2,9 @@
 os: osx
 
 before_install:
-- brew install ant fop
+- HOMEBREW_NO_AUTO_UPDATE=1 brew install ant fop
 - export FOP_HOME=/usr/local/opt/fop
 
 script:
 - ant
-- grep -ahEo "(http|https)://[a-zA-Z0-9./?=_-]*" dist/* | sort | uniq | xargs -n 1 curl -f -I
+- grep -v xmlns dist/* | grep -ahEo "(http|https)://[a-zA-Z0-9./?=_-]*" | sort | uniq | xargs -n 1 curl -f -I
