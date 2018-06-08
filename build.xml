@@ -69,7 +69,6 @@
     <fop format="application/pdf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.pdf" messagelevel="ERROR" />
     <fop format="application/rtf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.rtf" messagelevel="ERROR" />
     <fop format="application/rtf" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.doc" messagelevel="ERROR" />
-    <fop format="text/plain" fofile="${dist.dir}/${dist.file}.fo" outfile="${dist.dir}/${dist.file}.plain" messagelevel="ERROR" />
 
   </target>
 
