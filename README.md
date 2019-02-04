@@ -19,6 +19,6 @@ This will produce many versions of the resume in the `dist` directory
 
 ```shell
 brew install ant fop
-export FOP_HOME=/usr/local/opt/fop
+export FOP_HOME=/usr/local/Cellar/fop/2.3/libexec/fop/
 ant
 ```
