@@ -53,7 +53,7 @@
 
    <experience>
      <job>
-       <title>Vice President - Principal Software Engineer</title>
+       <title>Vice President - Lead Engineer</title>
        <start_date>February 2019</start_date>
        <end_date>Present</end_date>
        <company>
@@ -70,9 +70,9 @@
          <project><name>GTB Data Platform</name></project>
        </projects>
        <tasks>
-         <task>Evaluation of a Data Platform out of native Azure components, namely Databricks, DataLake, SQL DataWarehouse, EventHub, Monitor, and AzureML</task>
-         <task>Automation and orchestration of Data Platform using Azure DevOps, Terraform, Docker, and Ansible</task>
-         <task>Evaluation of Cloud Custodian for Azure</task>
+         <task>Created a Data Platform out of native Azure components, namely Databricks, DataLake, SQL DataWarehouse, EventHub, Monitor, and AzureML</task>
+         <task>Automated and orchestrated Data Platform using Azure DevOps, Terraform, Docker, and Ansible</task>
+         <task>Evaluated Cloud Custodian in Azure</task>
        </tasks>
      </job>
      <job>
@@ -153,7 +153,7 @@
         <end_date>December 2011</end_date>
         <company>
           <name>Swype</name>
-          <url>https://www.swype.com/</url>
+          <url>http://www.swype.com/</url>
           <location>Durham, NC</location>
         </company>
         <org>
@@ -225,7 +225,7 @@
          <end_date>September 2002</end_date>
          <company>
             <name>Sun Microsystems</name>
-            <url>https://www.sun.com/</url>
+            <url>http://www.sun.com/</url>
             <location>Menlo Park, CA</location>
          </company>
          <org>
@@ -266,7 +266,6 @@
          <projects>
             <project>
                <name>Coral Connect</name>
-               <url>https://www.coralconnect.org/</url>
             </project>
          </projects>
 
@@ -283,7 +282,6 @@
          <end_date>September 2001</end_date>
          <company>
             <name>Liquid Thinking</name>
-            <url>https://www.liquidthinking.com/</url>
             <location>San Francisco, CA</location>
          </company>
          <org>
@@ -292,7 +290,7 @@
          <projects>
             <project>
                <name>Leap Track</name>
-               <url>https://www.leaptrack.com/</url>
+               <url>http://www.leaptrack.com/</url>
             </project>
             <project>
                <name>Cypress Semiconductor</name>
@@ -304,7 +302,6 @@
             </project>
             <project>
                <name>Coral Connect</name>
-               <url>https://www.coralconnect.org/</url>
             </project>
          </projects>
 
@@ -333,23 +330,19 @@
          <projects>
             <project>
                <name>TeamLab</name>
-               <url>https://www.teamlab.org/</url>
             </project>
             <project>
                <name>ChemSense</name>
-               <url>https://www.chemsense.org/</url>
             </project>
             <project>
                <name>CILT KN</name>
-               <url>https://www.ciltkn.org/</url>
+               <url>http://www.ciltkn.org/</url>
             </project>
             <project>
                <name>URLex</name>
-               <url>https://www.ctl.sri.com/urlex/home.jsp</url>
             </project>
             <project>
                <name>LOM-IMS XML Toolkit</name>
-               <url>https://www.imsproject.org/tools/</url>
             </project>
          </projects>
 
