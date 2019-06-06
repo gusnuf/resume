@@ -53,12 +53,35 @@
 
    <experience>
      <job>
+       <title>Vice President - Principal Software Engineer</title>
+       <start_date>February 2019</start_date>
+       <end_date>Present</end_date>
+       <company>
+         <name>Deutsche Bank</name>
+         <url>https://www.db.com/</url>
+         <location>Cary, NC</location>
+       </company>
+       <org>
+         <division>Global Transaction Banking</division>
+         <department>Digital Office</department>
+         <team>Data Platform team</team>
+       </org>
+       <projects>
+         <project><name>GTB Data Platform</name></project>
+       </projects>
+       <tasks>
+         <task>Evaluation of a Data Platform out of native Azure components, namely Databricks, DataLake, SQL DataWarehouse, EventHub, Monitor, and AzureML</task>
+         <task>Automation and orchestration of Data Platform using Azure DevOps, Terraform, Docker, and Ansible</task>
+         <task>Evaluation of Cloud Custodian for Azure</task>
+       </tasks>
+     </job>
+     <job>
        <title>Senior Principal Software Engineer</title>
        <start_date>September 2016</start_date>
        <end_date>February 2019</end_date>
        <company>
          <name>Nuance Communications</name>
-         <url>http://www.nuance.com/</url>
+         <url>https://www.nuance.com/</url>
          <location>Raleigh, NC</location>
        </company>
        <org>
@@ -99,7 +122,7 @@
         <end_date>September 2016</end_date>
         <company>
           <name>Nuance Communications</name>
-          <url>http://www.nuance.com/</url>
+          <url>https://www.nuance.com/</url>
           <location>Durham, NC</location>
         </company>
         <org>
@@ -130,7 +153,7 @@
         <end_date>December 2011</end_date>
         <company>
           <name>Swype</name>
-          <url>http://www.swype.com/</url>
+          <url>https://www.swype.com/</url>
           <location>Durham, NC</location>
         </company>
         <org>
@@ -202,7 +225,7 @@
          <end_date>September 2002</end_date>
          <company>
             <name>Sun Microsystems</name>
-            <url>http://www.sun.com/</url>
+            <url>https://www.sun.com/</url>
             <location>Menlo Park, CA</location>
          </company>
          <org>
@@ -212,7 +235,7 @@
          <projects>
             <project>
                <name>Java Community Process</name>
-               <url>http://www.jcp.org/</url>
+               <url>https://www.jcp.org/</url>
             </project>
             <project>
                <name>Developer Community Knowledge</name>
@@ -234,7 +257,7 @@
          <end_date>January 2002</end_date>
          <company>
             <name>James Irvine Foundation</name>
-            <url>http://www.irvine.org/</url>
+            <url>https://www.irvine.org/</url>
             <location>San Francisco, CA</location>
          </company>
          <org>
@@ -243,7 +266,7 @@
          <projects>
             <project>
                <name>Coral Connect</name>
-               <url>http://www.coralconnect.org/</url>
+               <url>https://www.coralconnect.org/</url>
             </project>
          </projects>
 
@@ -260,7 +283,7 @@
          <end_date>September 2001</end_date>
          <company>
             <name>Liquid Thinking</name>
-            <url>http://www.liquidthinking.com/</url>
+            <url>https://www.liquidthinking.com/</url>
             <location>San Francisco, CA</location>
          </company>
          <org>
@@ -269,19 +292,19 @@
          <projects>
             <project>
                <name>Leap Track</name>
-               <url>http://www.leaptrack.com/</url>
+               <url>https://www.leaptrack.com/</url>
             </project>
             <project>
                <name>Cypress Semiconductor</name>
-               <url>http://www.cypress.com/</url>
+               <url>https://www.cypress.com/</url>
             </project>
             <project>
                <name>Certicom</name>
-               <url>http://www.certicom.com/</url>
+               <url>https://www.certicom.com/</url>
             </project>
             <project>
                <name>Coral Connect</name>
-               <url>http://www.coralconnect.org/</url>
+               <url>https://www.coralconnect.org/</url>
             </project>
          </projects>
 
@@ -300,7 +323,7 @@
          <end_date>February 2001</end_date>
          <company>
             <name>SRI International</name>
-            <url>http://www.sri.com/</url>
+            <url>https://www.sri.com/</url>
             <location>Menlo Park, CA</location>
          </company>
          <org>
@@ -310,23 +333,23 @@
          <projects>
             <project>
                <name>TeamLab</name>
-               <url>http://www.teamlab.org/</url>
+               <url>https://www.teamlab.org/</url>
             </project>
             <project>
                <name>ChemSense</name>
-               <url>http://www.chemsense.org/</url>
+               <url>https://www.chemsense.org/</url>
             </project>
             <project>
                <name>CILT KN</name>
-               <url>http://www.ciltkn.org/</url>
+               <url>https://www.ciltkn.org/</url>
             </project>
             <project>
                <name>URLex</name>
-               <url>http://www.ctl.sri.com/urlex/home.jsp</url>
+               <url>https://www.ctl.sri.com/urlex/home.jsp</url>
             </project>
             <project>
                <name>LOM-IMS XML Toolkit</name>
-               <url>http://www.imsproject.org/tools/</url>
+               <url>https://www.imsproject.org/tools/</url>
             </project>
          </projects>
 
@@ -472,7 +495,7 @@
          <institution>
             <name>Goucher College</name>
             <location>Towson, MD</location>
-            <url>http://www.goucher.edu/</url>
+            <url>https://www.goucher.edu/</url>
          </institution>
          <degree>BA in Computer Science</degree>
          <highlights>Courses in Java, LISP, 3D Graphics, A.I., Assembly, Software Engineering, Algorithms, Hardware Architecture, and Computation</highlights>
@@ -484,7 +507,7 @@
          <institution>
             <name>University of Delaware</name>
             <location>Newark, DE</location>
-            <url>http://www.udel.edu/</url>
+            <url>https://www.udel.edu/</url>
          </institution>
          <highlights>Graduate &amp; undergraduate courses in C, C++, compiler design, computer graphics, and multimedia design.</highlights>
       </experience>
