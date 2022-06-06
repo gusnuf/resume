@@ -18,7 +18,7 @@
       <name>F. Grahame Murray</name>
       <city>Raleigh</city>
       <state>NC</state>
-      <zip>27604</zip>
+      <zip>27608</zip>
       <phone type="h">+1 (919) 828-9879</phone>
       <email>jobs@grahame.com</email>
       <url>https://grahame.com</url>
@@ -29,17 +29,14 @@
       <keyword>Scalability</keyword>
       <keyword>Python</keyword>
       <keyword>Docker</keyword>
-      <keyword>Java</keyword>
-      <keyword>Mesos</keyword>
-      <keyword>Javascript</keyword>
-      <keyword>Puppet</keyword>
-      <keyword>AWS</keyword>
+      <keyword>Terraform</keyword>
+      <keyword>GCP</keyword>
    </keywords>
 
-   <objective>I am looking for a full-time position as a lead, principal, or senior software (and/or systems) engineer or architect, designing and developing interesting and challenging systems, services, and applications.</objective>
+   <objective>I am looking for a full-time position as a lead or principal software (and/or systems) engineer or architect, designing and developing interesting and challenging systems, services, and applications.</objective>
 
    <highlights>
-      <highlight>15+ years software development and operations experience</highlight>
+      <highlight>20+ years software development and operations experience</highlight>
       <highlight>A highly curious generalist</highlight>
       <highlight>Product development and consulting experience</highlight>
       <highlight>Depth in language, educational, and community projects</highlight>
@@ -53,9 +50,39 @@
 
    <experience>
      <job>
+       <title>Director - Lead Engineer</title>
+       <start_date>May 2020</start_date>
+       <end_date>Present</end_date>
+       <company>
+         <name>Deutsche Bank</name>
+         <url>https://www.db.com/</url>
+         <location>Cary, NC</location>
+       </company>
+       <org>
+         <division>CTO</division>
+         <department>Cloud Services</department>
+         <team>Core Engineering</team>
+       </org>
+       <projects>
+         <project><name>GCP Control Plane</name></project>
+         <project><name>Landing Zones</name></project>
+         <project><name>Module Authoring Framework</name></project>
+       </projects>
+       <tasks>
+         <task>Completed Global Enterprise Engineer program to be in the top 5% of the bank's engineers</task>
+         <task>Created and led a multi-region engineering team to build and operate a GCP Control Plane</task>
+         <task>Designed Landing Zone platform to enable end users to safely self-service GCP infrastructure using GitHub and Terraform Enterprise</task>
+         <task>Architected a mechanism to allow the platform to be safely extended by the community</task>
+         <task>Delivered Landing Zones to 250+ application and infrastructure teams</task>
+         <task>Constructed stadardized Terraform module authoring framework</task>
+         <task>Regularized GCP organization management via Terraform Infrastructure as Code</task>
+         <task>Evangelized the platform across the bank by producing documentation, training, communities of practice, and events</task>
+       </tasks>
+     </job>
+     <job>
        <title>Vice President - Lead Engineer</title>
        <start_date>February 2019</start_date>
-       <end_date>Present</end_date>
+       <end_date>May 2020</end_date>
        <company>
          <name>Deutsche Bank</name>
          <url>https://www.db.com/</url>
@@ -412,7 +439,7 @@
 
       <tools>
          <tool category="Web Servers">nginx, haproxy, uWSGI, gunicorn, Apache</tool>
-         <tool category="Provisioning">Foreman, Cobbler, Terraform, Packer, AWS CloudFormation, Azure Templates</tool>
+         <tool category="Provisioning">Terraform Enterprise, Foreman, Cobbler, Terraform, Packer, AWS CloudFormation, Azure Templates</tool>
          <tool category="Container">Docker, Mesos, Kubernetes, Marathon</tool>
          <tool category="Virtual Network">Calico, istio, Flannel, Weave, OpenVSwitch</tool>
          <tool category="Service Discovery">Consul, Zookeeper, Etcd, MesosDNS</tool>
@@ -426,13 +453,14 @@
          <tool category="Messaging">RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
          <tool category="IDE">IntelliJ IDEA, PyCharm, Eclipse, NetBeans, Xcode, Visual Studio, CodeWarrior, JBuilder</tool>
          <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
-         <tool category="Version Control">Git, Subversion, CVS, Perforce, SCCS, RCS</tool>
+         <tool category="Version Control">Git, GitHub, GitLab, Subversion, CVS, Perforce, SCCS, RCS</tool>
          <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
-	 	     <tool category="Web UI">jQuery, YUI</tool>
+	 	   <tool category="Web UI">jQuery, YUI</tool>
          <tool category="Build">Ant, Jenkins, Travis, Hudson, Cruise Control, Maven, Ivy, Make</tool>
          <tool category="Unit Testing">py.test, JUnit, Cobertura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
-	 	     <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
-	 	     <tool category="Caching">Redis, Memcache, APC, XCache</tool>
+	 	   <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
+         <tool category="Acceptance Testing">Inspec, rspec, Cucumber, serverspec</tool>
+	 	   <tool category="Caching">Redis, Memcache, APC, XCache</tool>
          <tool category="Web/Integration Testing">Selenium, JProbe</tool>
          <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
          <tool category="MVC">Django, Ember, Angular, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
