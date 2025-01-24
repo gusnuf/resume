@@ -14,12 +14,13 @@
 <xsl:text>
 ---
 title: Resume
-author: grahame
+author: Grahame Murray
 type: page
+toc: false
 ---
 </xsl:text>
 
-# <xsl:value-of select="contact/name"/> <xsl:text>
+## <xsl:value-of select="contact/name"/> <xsl:text>
 </xsl:text>
 <xsl:value-of select="contact/url"/>
 <xsl:text> &#160;&#160;&#160;&#160;&#160; | </xsl:text>
@@ -43,7 +44,7 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 * * *
 </xsl:text>
 
-## KEYWORD SUMMARY
+### KEYWORD SUMMARY
 <xsl:for-each select="keywords/keyword">
   <xsl:if test="position() != 1">
         <xsl:text>, </xsl:text>
@@ -52,27 +53,27 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 </xsl:for-each>
 
 
-## OBJECTIVE
+### OBJECTIVE
 <xsl:value-of select="objective"/>
 
 
-## HIGHLIGHTS<xsl:for-each select="highlights/highlight">
+### HIGHLIGHTS<xsl:for-each select="highlights/highlight">
 * <xsl:value-of select="."/>
 </xsl:for-each>
 
 
-## CORE COMPETENCIES<xsl:for-each select="competencies/competency">
+### CORE COMPETENCIES<xsl:for-each select="competencies/competency">
 * <xsl:value-of select="."/>
 </xsl:for-each>
 
 
-## EXPERIENCE
+### EXPERIENCE
 <xsl:for-each select="experience/job">
-### <xsl:value-of select="title"/>, *<xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>*
-#### <xsl:value-of select="company/name"/> <xsl:text>  -  </xsl:text>  *<xsl:value-of select="company/location"/>*
+#### <xsl:value-of select="title"/>, *<xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>*
+##### <xsl:value-of select="company/name"/> <xsl:text>  -  </xsl:text>  *<xsl:value-of select="company/location"/>*
 <xsl:text>
 </xsl:text>
-##### <xsl:for-each select="org/*">
+###### <xsl:for-each select="org/*">
   <xsl:value-of select="."/>
   <xsl:if test="position() != last()">, </xsl:if>
 </xsl:for-each>
@@ -86,8 +87,8 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 </xsl:for-each>
 
 
-## COMPUTER SKILLS
-### Computer Languages:
+### COMPUTER SKILLS
+#### Computer Languages:
 <xsl:for-each select="skills/languages/language">
   <xsl:if test="position() != 1">
         <xsl:text>, </xsl:text>
@@ -95,7 +96,7 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
   <xsl:value-of select="."/>
 </xsl:for-each>
 
-### Databases:
+#### Databases:
 <xsl:for-each select="skills/databases/database">
   <xsl:if test="position() != 1">
         <xsl:text>, </xsl:text>
@@ -103,7 +104,7 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
   <xsl:value-of select="."/>
 </xsl:for-each>
 
-### Platforms:
+#### Platforms:
 <xsl:for-each select="skills/platforms/platform">
   <xsl:if test="position() != 1">
         <xsl:text>, </xsl:text>
@@ -111,7 +112,7 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
   <xsl:value-of select="."/>
 </xsl:for-each>
 
-### Tools:
+#### Tools:
 <xsl:for-each select="skills/tools/tool">
   <xsl:text>  </xsl:text>**<xsl:value-of select="@category" />**: <xsl:value-of select="."/>
 <xsl:text>
@@ -119,7 +120,7 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 </xsl:text>
 
 </xsl:for-each>
-### Operating Systems:
+#### Operating Systems:
 <xsl:for-each select="skills/oses/os">
   <xsl:if test="position() != 1">
         <xsl:text>, </xsl:text>
@@ -129,25 +130,33 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 
 
 
-## PUBLICATIONS
-<xsl:for-each select="publications/publication">"<xsl:value-of select="title"/>"<xsl:text>
+### PUBLICATIONS
+<xsl:for-each select="publications/publication">
+##### "<xsl:value-of select="title"/>"
+<xsl:text>
+
 </xsl:text>
-<xsl:value-of select="description"/>
+
+<xsl:value-of select="description"/><xsl:text>
+
+</xsl:text>
 Published: <xsl:value-of select="publisher"/>, <xsl:value-of select="publish_date"/>
 <xsl:text>
 
 </xsl:text>
 </xsl:for-each>
 
-## EDUCATION
+### EDUCATION
 <xsl:for-each select="education/experience">
-<xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>
+##### <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>
 <xsl:text> </xsl:text>
 <xsl:value-of select="institution/name"/><xsl:text>  </xsl:text><xsl:value-of select="institution/location"/>
 <xsl:text>
+
 </xsl:text>
 <xsl:if test="degree!=''">
-<xsl:value-of select="degree"/><xsl:text>
+###### <xsl:value-of select="degree"/><xsl:text>
+
 </xsl:text>
 </xsl:if>
 <xsl:value-of select="highlights"/>
@@ -156,7 +165,7 @@ Published: <xsl:value-of select="publisher"/>, <xsl:value-of select="publish_dat
 </xsl:text>
 </xsl:for-each>
 
-## REFERENCES
+### REFERENCES
 <xsl:for-each select="references/reference">
 <xsl:value-of select="."/>
 </xsl:for-each>

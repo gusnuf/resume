@@ -50,9 +50,63 @@
 
    <experience>
      <job>
+      <title>Distinguished Engineer</title>
+      <start_date>November 2024</start_date>
+      <end_date>February 2025</end_date>
+      <company>
+        <name>Progress Software Group</name>
+        <url>https://www.progress.com/</url>
+        <location>Raleigh, NC</location>
+      </company>
+      <org>
+        <division>Digital Experience</division>
+        <department>ShareFile</department>
+        <team>Engineering</team>
+      </org>
+      <projects>
+        <project><name>Transition</name></project>
+      </projects>
+      <tasks>
+        <task>Progress Software bought ShareFile from CSG</task>
+        <task>Helped with transition, cross training, and writing documentation</task>
+      </tasks>
+     </job>
+     <job>
+      <title>Senior Principal Software Engineer</title>
+      <start_date>August 2022</start_date>
+      <end_date>October 2024</end_date>
+      <company>
+        <name>Cloud Software Group</name>
+        <url>https://www.cloud.com/</url>
+        <location>Raleigh, NC</location>
+      </company>
+      <org>
+        <division>ShareFile</division>
+        <department>Solution Platform</department>
+        <team>Engineering</team>
+      </org>
+      <projects>
+         <project><name>Enterprise Architecture</name></project>
+         <project><name>Integrations</name></project>
+         <project><name>Event Bus</name></project>
+         <project><name>Information Intake</name></project>
+         <project><name>User-Defined Data Tables</name></project>
+      </projects>
+      <tasks>
+        <task>Started at Citrix but they were soon acquired by CSG</task>
+        <task>Evaluated and selected Integration PAAS vendor</task>
+        <task>Designed a new enterprise architecture for ShareFile</task>
+        <task>Built system-wide event bus using DAPR, Kafka, and Cloud Events that triggers Domino Workflows</task>
+        <task>Architected several systems such as Integrations, Information Intake, Data Tables</task>
+        <task>Permanent member of architecture boards and committees</task>
+        <task>Evangelized enterprise architecture within Solution Platform domain and across all of Engineering</task>
+      </tasks>
+     </job>
+
+     <job>
        <title>Director - Lead Engineer</title>
        <start_date>May 2020</start_date>
-       <end_date>Present</end_date>
+       <end_date>August 2022</end_date>
        <company>
          <name>Deutsche Bank</name>
          <url>https://www.db.com/</url>
@@ -72,7 +126,7 @@
          <task>Completed Global Enterprise Engineer program to be in the top 5% of the bank's engineers</task>
          <task>Created and led a multi-region engineering team to build and operate a GCP Control Plane</task>
          <task>Designed Landing Zone platform to enable end users to safely self-service GCP infrastructure using GitHub and Terraform Enterprise</task>
-         <task>Architected a mechanism to allow the platform to be safely extended by the community</task>
+         <task>Architected mechanisms to allow the platform to be safely extended by the community</task>
          <task>Delivered Landing Zones to 250+ application and infrastructure teams</task>
          <task>Constructed stadardized Terraform module authoring framework</task>
          <task>Regularized GCP organization management via Terraform Infrastructure as Code</task>
