@@ -44,28 +44,13 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 * * *
 </xsl:text>
 
-### KEYWORD SUMMARY
-<xsl:for-each select="keywords/keyword">
-  <xsl:if test="position() != 1">
-        <xsl:text>, </xsl:text>
-      </xsl:if>
-  <xsl:value-of select="."/>
-</xsl:for-each>
-
-
-### OBJECTIVE
-<xsl:value-of select="objective"/>
+### SUMMARY
+<xsl:value-of select="summary"/>
 
 
 ### HIGHLIGHTS<xsl:for-each select="highlights/highlight">
 * <xsl:value-of select="."/>
 </xsl:for-each>
-
-
-### CORE COMPETENCIES<xsl:for-each select="competencies/competency">
-* <xsl:value-of select="."/>
-</xsl:for-each>
-
 
 ### EXPERIENCE
 <xsl:for-each select="experience/job">
@@ -120,14 +105,6 @@ Visit <xsl:value-of select="online/source"/> to see the code that created this r
 </xsl:text>
 
 </xsl:for-each>
-#### Operating Systems:
-<xsl:for-each select="skills/oses/os">
-  <xsl:if test="position() != 1">
-        <xsl:text>, </xsl:text>
-  </xsl:if>
-  <xsl:value-of select="."/>
-</xsl:for-each>
-
 
 
 ### PUBLICATIONS

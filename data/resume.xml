@@ -24,29 +24,14 @@
       <url>https://grahame.com</url>
    </contact>
 
-   <keywords>
-      <keyword>DevOps</keyword>
-      <keyword>Scalability</keyword>
-      <keyword>Python</keyword>
-      <keyword>Docker</keyword>
-      <keyword>Terraform</keyword>
-      <keyword>GCP</keyword>
-   </keywords>
-
-   <objective>I am looking for a full-time position as a lead or principal software (and/or systems) engineer or architect, designing and developing interesting and challenging systems, services, and applications.</objective>
+   <summary>Skilled Senior Principal Software Engineer with 20+ years of experience in designing and building enterprise architectures, leading engineering teams, and evangelizing innovative solutions. Proficient in DevOps, cloud computing, and various programming languages. Proven expertise in managing complex systems and driving business outcomes through technology.</summary>
 
    <highlights>
-      <highlight>20+ years software development and operations experience</highlight>
+      <highlight>20+ years software development, design, and operations experience</highlight>
       <highlight>A highly curious generalist</highlight>
       <highlight>Product development and consulting experience</highlight>
       <highlight>Depth in language, educational, and community projects</highlight>
    </highlights>
-
-   <competencies>
-      <competency>High-scale web application and service development</competency>
-      <competency>Combined development, deployment, and operations</competency>
-      <competency>Systems architecture and design</competency>
-   </competencies>
 
    <experience>
      <job>
@@ -54,7 +39,7 @@
       <start_date>November 2024</start_date>
       <end_date>February 2025</end_date>
       <company>
-        <name>Progress Software Group</name>
+        <name>Progress Software</name>
         <url>https://www.progress.com/</url>
         <location>Raleigh, NC</location>
       </company>
@@ -97,7 +82,7 @@
         <task>Evaluated and selected Integration PAAS vendor</task>
         <task>Designed a new enterprise architecture for ShareFile</task>
         <task>Built system-wide event bus using DAPR, Kafka, and Cloud Events that triggers Domino Workflows</task>
-        <task>Architected several systems such as Integrations, Information Intake, Data Tables</task>
+        <task>Architected several microservices using Piral, React, NestJS, NodeJS, DAPR, Kafka, and MongoDB such as Integrations, Information Intake, Data Tables, and User Defined Forms</task>
         <task>Permanent member of architecture boards and committees</task>
         <task>Evangelized enterprise architecture within Solution Platform domain and across all of Engineering</task>
       </tasks>
@@ -128,7 +113,7 @@
          <task>Designed Landing Zone platform to enable end users to safely self-service GCP infrastructure using GitHub and Terraform Enterprise</task>
          <task>Architected mechanisms to allow the platform to be safely extended by the community</task>
          <task>Delivered Landing Zones to 250+ application and infrastructure teams</task>
-         <task>Constructed stadardized Terraform module authoring framework</task>
+         <task>Constructed standardized Terraform module authoring framework</task>
          <task>Regularized GCP organization management via Terraform Infrastructure as Code</task>
          <task>Evangelized the platform across the bank by producing documentation, training, communities of practice, and events</task>
        </tasks>
@@ -145,7 +130,7 @@
        <org>
          <division>Global Transaction Banking</division>
          <department>Digital Office</department>
-         <team>Data Platform team</team>
+         <team>Data Platform</team>
        </org>
        <projects>
          <project><name>GTB Data Platform</name></project>
@@ -191,7 +176,7 @@
          <task>Created go app that generated Sensu checks for services running inside Kubernetes, querying API for services annotated with configmaps that describe alert thresholds</task>
          <task>Deployed Jenkins 2.0 integrated with GitLab for CICD.  Built shared pipelines (as code) to build all our RPMs, Docker images, and Puppet modules</task>
          <task>Made and/or used rspec-tested Puppet 4 modules to deploy all of the above</task>
-         <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, selinux, DNS, and metrics</task>
+         <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, SELinux, DNS, and metrics</task>
          <task>Used Packer to bake Azure images for faster provisioning</task>
          <task>Setup a CI/CD pipeline to package each customer's "visibility" configurations (Kibana dashboards, Logstash configs, ElastAlert rules, and Grafana dashboards) and install them on the appropriate clusters</task>
          <task>Documented our platforms and stacks, evangelized them to our customers, and assisted with customer on-boarding</task>
@@ -222,8 +207,8 @@
           <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
           <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
           <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
-          <task>Built second API in Go, wrapping core business logic written in C, to support realtime predictions in the cloud</task>
-          <task>Assumed responsibility of legacy Java/Spring language database mangement system</task>
+          <task>Built second API in Go, wrapping core business logic written in C, to support real-time predictions in the cloud</task>
+          <task>Assumed responsibility of legacy Java/Spring language database management system</task>
           <task>Built server support for on-device storefront</task>
           <task>Deployed and support applications in Chinese datacenters</task>
         </tasks>
@@ -443,7 +428,7 @@
       <languages>
          <language version="2.x">Python</language>
          <language version="1.5">Java</language>
-         <language version="1.2">Go (golang)</language>
+         <language version="1.2">Go (Golang)</language>
          <language>Javascript</language>
          <language>Ruby</language>
          <language version="2.0">JSP &amp; JSTL/EL</language>
@@ -501,7 +486,7 @@
          <tool category="Search">ElasticSearch, Kibana, Logstash, ElastAlert, ReadonlyREST, SOLR, Lucene, Verity</tool>
          <tool category="Monitoring">Sensu, Nagios, SNMP, Cacti, SyslogNG</tool>
          <tool category="Metrics">Graphite, Prometheus, Carbon, Collectd, Statsd, Bucky</tool>
-         <tool category="Identity/Auth">FreeIPA, Vault, OpenLDAP, OpenID, OAuth</tool>
+         <tool category="Identity/Auth">FreeIPA, Vault, OpenLDAP, OpenID, OAuth, OIDC</tool>
          <tool category="NoSQL">Cassandra, HBase, MongoDB, CouchDB, Riak</tool>
          <tool category="Reporting">Spark, Hadoop, Pig, Hive, Pentaho, Jasper, Crystal Reports</tool>
          <tool category="Messaging">RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
@@ -509,7 +494,7 @@
          <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
          <tool category="Version Control">Git, GitHub, GitLab, Subversion, CVS, Perforce, SCCS, RCS</tool>
          <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
-	 	   <tool category="Web UI">jQuery, YUI</tool>
+	 	   <tool category="Web Frameworks">Piral, React, Ember, Angular, jQuery, YUI</tool>
          <tool category="Build">Ant, Jenkins, Travis, Hudson, Cruise Control, Maven, Ivy, Make</tool>
          <tool category="Unit Testing">py.test, JUnit, Cobertura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
 	 	   <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
@@ -525,17 +510,6 @@
          <tool category="IM">Jabberd, Openfire</tool>
          <tool category="Aspect Handling">AspectJ, JBossAOP</tool>
       </tools>
-
-      <oses>
-         <os>CentOS</os>
-         <os>Windows Vista/XP/2000/NT</os>
-         <os>RedHat EL</os>
-         <os>MacOS</os>
-         <os>Solaris</os>
-         <os>PalmOS</os>
-         <os>BSD</os>
-         <os>SunOS</os>
-      </oses>
    </skills>
 
    <publications>
