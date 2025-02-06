@@ -33,25 +33,11 @@
 			  </xsd:sequence>
 			</xsd:complexType>
   		  </xsd:element>
-		  <xsd:element name="keywords">
-		    <xsd:complexType>
-			  <xsd:sequence>
-			    <xsd:element name="keyword" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>
-			</xsd:complexType>
-  		  </xsd:element>
-		  <xsd:element name="objective"	type="xsd:string"/>
+		  <xsd:element name="summary" type="xsd:string"/>
 		  <xsd:element name="highlights">
 		    <xsd:complexType>
 			  <xsd:sequence>
 			    <xsd:element name="highlight" type="xsd:string" maxOccurs="unbounded"/>
-			  </xsd:sequence>
-			</xsd:complexType>
-  		  </xsd:element>
-		  <xsd:element name="competencies">
-		    <xsd:complexType>
-			  <xsd:sequence>
-			    <xsd:element name="competency" type="xsd:string" maxOccurs="unbounded"/>
 			  </xsd:sequence>
 			</xsd:complexType>
   		  </xsd:element>
@@ -132,41 +118,34 @@
 
   <xsd:complexType name="SkillsType">
     <xsd:sequence>
-	<xsd:element name="languages">
-	  <xsd:complexType>
-		<xsd:sequence>
-		  <xsd:element name="language" type="VersionType" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	  </xsd:complexType>
-	</xsd:element>
-	<xsd:element name="databases">
-	  <xsd:complexType>
-		<xsd:sequence>
-		  <xsd:element name="database" type="xsd:string" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	  </xsd:complexType>
-	</xsd:element>
-	<xsd:element name="platforms">
-	  <xsd:complexType>
-		<xsd:sequence>
-		  <xsd:element name="platform" type="VersionType" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	  </xsd:complexType>
-	</xsd:element>
-	<xsd:element name="tools">
-	  <xsd:complexType>
-		<xsd:sequence>
-		  <xsd:element name="tool" type="CategoryType" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	  </xsd:complexType>
-	</xsd:element>
-	<xsd:element name="oses">
-	  <xsd:complexType>
-		<xsd:sequence>
-		  <xsd:element name="os" type="xsd:string" maxOccurs="unbounded"/>
-		</xsd:sequence>
-	  </xsd:complexType>
-	</xsd:element>
+		<xsd:element name="languages">
+		<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="language" type="VersionType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="databases">
+		<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="database" type="xsd:string" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="platforms">
+		<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="platform" type="VersionType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
+		<xsd:element name="tools">
+		<xsd:complexType>
+			<xsd:sequence>
+			<xsd:element name="tool" type="CategoryType" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>
     </xsd:sequence>
   </xsd:complexType>
 

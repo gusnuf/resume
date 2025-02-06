@@ -45,23 +45,12 @@ select="contact/url"/></a></td> </tr> </table>
     	<a><xsl:attribute name="href"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/></a> to see the code that created this resume.
 	</span>
 
-	<p/>
-
-
-	<span class="header" style="font-weight:bold">KEYWORD SUMMARY</span><br />
-	<xsl:for-each select="keywords/keyword">
-	  <xsl:if test="position() != 1">
-            <xsl:text>, </xsl:text>
-          </xsl:if>
-	  <xsl:value-of select="."/>
-	</xsl:for-each>
-
 
 	<p/>
 
 
-	<span class="header" style="font-weight:bold">OBJECTIVE</span><br />
-	<xsl:value-of select="objective"/>
+	<span class="header" style="font-weight:bold">SUMMARY</span><br />
+	<xsl:value-of select="summary"/>
 
 
 	<p/>
@@ -70,17 +59,6 @@ select="contact/url"/></a></td> </tr> </table>
 	<span class="header" style="font-weight:bold">HIGHLIGHTS</span><br />
 	<ul>
 	  <xsl:for-each select="highlights/highlight">
-	    <li><xsl:value-of select="."/></li>
-	  </xsl:for-each>
-	</ul>
-
-
-	<p/>
-
-
-	<span class="header" style="font-weight:bold">CORE COMPETENCIES</span><br/>
-	<ul>
-	  <xsl:for-each select="competencies/competency">
 	    <li><xsl:value-of select="."/></li>
 	  </xsl:for-each>
 	</ul>
@@ -186,17 +164,6 @@ select="contact/url"/></a></td> </tr> </table>
 	<xsl:for-each select="skills/tools/tool">
 	  &#160;&#160;<b><xsl:value-of select="@category" /></b><xsl:text>: </xsl:text><xsl:value-of select="."/><br />
  	</xsl:for-each>
-
-	<p/>
-
-	<b>Operating Systems</b>:<br />
-	<xsl:for-each select="skills/oses/os">
-	  <xsl:if test="position() != 1">
-            <xsl:text>, </xsl:text>
-      </xsl:if>
-	  <xsl:value-of select="."/>
- 	</xsl:for-each>
-
 
 	<p/>
 
