@@ -2,39 +2,39 @@
 
 <resume>
 
-   <online>
-     <site>https://grahame.com</site>
-     <base>https://grahame.com/resume</base>
-     <formats>
-     	<format extension="html">HTML</format>
-     	<format extension="pdf">PDF</format>
-     	<format extension="doc">Word</format>
-     	<format extension="txt">plain-text</format>
-     </formats>
-     <source>https://github.com/gusnuf/resume</source>
-   </online>
+  <online>
+    <site>https://grahame.com</site>
+    <base>https://grahame.com/resume</base>
+    <formats>
+      <format extension="html">HTML</format>
+      <format extension="pdf">PDF</format>
+      <format extension="doc">Word</format>
+      <format extension="txt">plain-text</format>
+    </formats>
+    <source>https://github.com/gusnuf/resume</source>
+  </online>
 
-   <contact>
-      <name>F. Grahame Murray</name>
-      <city>Raleigh</city>
-      <state>NC</state>
-      <zip>27608</zip>
-      <phone type="h">+1 (919) 828-9879</phone>
-      <email>jobs@grahame.com</email>
-      <url>https://grahame.com</url>
-   </contact>
+  <contact>
+    <name>F. Grahame Murray</name>
+    <city>Raleigh</city>
+    <state>NC</state>
+    <zip>27608</zip>
+    <phone type="h">+1 (919) 828-9879</phone>
+    <email>jobs@grahame.com</email>
+    <url>https://grahame.com</url>
+  </contact>
 
-   <summary>Skilled Senior Principal Software Engineer with 20+ years of experience in designing and building enterprise architectures, leading engineering teams, and evangelizing innovative solutions. Proficient in DevOps, cloud computing, and various programming languages. Proven expertise in managing complex systems and driving business outcomes through technology.</summary>
+  <summary>Skilled Senior Principal Software Engineer with 20+ years of experience in designing and building enterprise architectures, leading engineering teams, and evangelizing innovative solutions. Proficient in DevOps, cloud computing, and various programming languages. Proven expertise in managing complex systems and driving business outcomes through technology.</summary>
 
-   <highlights>
-      <highlight>20+ years software development, design, and operations experience</highlight>
-      <highlight>A highly curious generalist</highlight>
-      <highlight>Product development and consulting experience</highlight>
-      <highlight>Depth in language, educational, and community projects</highlight>
-   </highlights>
+  <highlights>
+    <highlight>20+ years software development, design, and operations experience</highlight>
+    <highlight>A highly curious generalist</highlight>
+    <highlight>Product development and consulting experience</highlight>
+    <highlight>Depth in language, educational, and community projects</highlight>
+  </highlights>
 
-   <experience>
-     <job>
+  <experience>
+    <job>
       <title>Distinguished Engineer</title>
       <start_date>November 2024</start_date>
       <end_date>February 2025</end_date>
@@ -49,14 +49,16 @@
         <team>Engineering</team>
       </org>
       <projects>
-        <project><name>Transition</name></project>
+        <project>
+          <name>Transition</name>
+        </project>
       </projects>
       <tasks>
         <task>Progress Software bought ShareFile from CSG</task>
         <task>Helped with transition, cross training, and writing documentation</task>
       </tasks>
-     </job>
-     <job>
+    </job>
+    <job>
       <title>Senior Principal Software Engineer</title>
       <start_date>August 2022</start_date>
       <end_date>October 2024</end_date>
@@ -71,498 +73,539 @@
         <team>Engineering</team>
       </org>
       <projects>
-         <project><name>Enterprise Architecture</name></project>
-         <project><name>Integrations</name></project>
-         <project><name>Event Bus</name></project>
-         <project><name>Information Intake</name></project>
-         <project><name>User-Defined Data Tables</name></project>
+        <project>
+          <name>Enterprise Architecture</name>
+        </project>
+        <project>
+          <name>Integrations</name>
+        </project>
+        <project>
+          <name>Event Bus</name>
+        </project>
+        <project>
+          <name>Information Intake</name>
+        </project>
+        <project>
+          <name>User-Defined Data Tables</name>
+        </project>
       </projects>
       <tasks>
-        <task>Started at Citrix but they were soon acquired by CSG</task>
-        <task>Evaluated and selected Integration PAAS vendor</task>
+        <task>Started at Citrix but was soon acquired by CSG</task>
+        <task>Evaluated and selected Integration PaaS vendor</task>
         <task>Designed a new enterprise architecture for ShareFile</task>
         <task>Built system-wide event bus using DAPR, Kafka, and Cloud Events that triggers Domino Workflows</task>
         <task>Architected several microservices using Piral, React, NestJS, NodeJS, DAPR, Kafka, and MongoDB such as Integrations, Information Intake, Data Tables, and User Defined Forms</task>
-        <task>Permanent member of architecture boards and committees</task>
-        <task>Evangelized enterprise architecture within Solution Platform domain and across all of Engineering</task>
+        <task>Organized and ran architecture review boards and design committees to facilitate collaboration</task>
+        <task>Evangelized the Enterprise Architecture within the domain, across all of Engineering, and with Design, Product, and Leadership</task>
+        <task>Mentored engineers, participated in design and code reviews, actively explored the next solutions, and fixed the tougher problems</task>
+        <task>Introduced Backstage as a developer knowledge base and architecture portal</task>
       </tasks>
-     </job>
+    </job>
 
-     <job>
-       <title>Director - Lead Engineer</title>
-       <start_date>May 2020</start_date>
-       <end_date>August 2022</end_date>
-       <company>
-         <name>Deutsche Bank</name>
-         <url>https://www.db.com/</url>
-         <location>Cary, NC</location>
-       </company>
-       <org>
-         <division>CTO</division>
-         <department>Cloud Services</department>
-         <team>Core Engineering</team>
-       </org>
-       <projects>
-         <project><name>GCP Control Plane</name></project>
-         <project><name>Landing Zones</name></project>
-         <project><name>Module Authoring Framework</name></project>
-       </projects>
-       <tasks>
-         <task>Completed Global Enterprise Engineer program to be in the top 5% of the bank's engineers</task>
-         <task>Created and led a multi-region engineering team to build and operate a GCP Control Plane</task>
-         <task>Designed Landing Zone platform to enable end users to safely self-service GCP infrastructure using GitHub and Terraform Enterprise</task>
-         <task>Architected mechanisms to allow the platform to be safely extended by the community</task>
-         <task>Delivered Landing Zones to 250+ application and infrastructure teams</task>
-         <task>Constructed standardized Terraform module authoring framework</task>
-         <task>Regularized GCP organization management via Terraform Infrastructure as Code</task>
-         <task>Evangelized the platform across the bank by producing documentation, training, communities of practice, and events</task>
-       </tasks>
-     </job>
-     <job>
-       <title>Vice President - Lead Engineer</title>
-       <start_date>February 2019</start_date>
-       <end_date>May 2020</end_date>
-       <company>
-         <name>Deutsche Bank</name>
-         <url>https://www.db.com/</url>
-         <location>Cary, NC</location>
-       </company>
-       <org>
-         <division>Global Transaction Banking</division>
-         <department>Digital Office</department>
-         <team>Data Platform</team>
-       </org>
-       <projects>
-         <project><name>GTB Data Platform</name></project>
-       </projects>
-       <tasks>
-         <task>Created a Data Platform out of native Azure components, namely Databricks, DataLake, SQL DataWarehouse, EventHub, Monitor, and AzureML</task>
-         <task>Automated and orchestrated Data Platform using Azure DevOps, Terraform, Docker, and Ansible</task>
-         <task>Evaluated Cloud Custodian in Azure</task>
-       </tasks>
-     </job>
-     <job>
-       <title>Senior Principal Software Engineer</title>
-       <start_date>September 2016</start_date>
-       <end_date>February 2019</end_date>
-       <company>
-         <name>Nuance Communications</name>
-         <url>https://www.nuance.com/</url>
-         <location>Raleigh, NC</location>
-       </company>
-       <org>
-         <division>Automotive division</division>
-         <department>Cloud Reliability Engineering</department>
-         <team>Infrastructure team</team>
-       </org>
-       <projects>
-         <project><name>Mobile Compute Platform</name></project>
-         <project><name>Mobile "Visibility" stack</name></project>
-         <project><name>Mobile Shared and Core Services</name></project>
-         <project><name>Jenkins 2.0 CI/CD pipelines</name></project>
-         <project><name>Kubernetes Sensu Checks</name></project>
-         <project><name>Swype Connect</name></project>
-       </projects>
-       <tasks>
-         <task>Swype's Connect Operations team moved to the hosting group for the Mobile division, which later became to the new Automotive division</task>
-         <task>Remained in 1st tier on-call rotation for Swype Connect</task>
-         <task>Implemented Foreman for system management and provisioning of bare metal, ESX, and Azure instances</task>
-         <task>Deployed infrastructure world-wide in Azure using purpose-built and reusable Terraform modules</task>
-         <task>Integrated Katello for management of system and application content across all datacenters</task>
-         <task>Rolled out FreeIPA to centrally manage SSL certificates, Kerberos, DNS, system auth (sssd), and application auth</task>
-         <task>Designed and built proof-of-concept multi-tenant compute platform using Mesos, Marathon, Consul, Calico, HAProxy and Docker to support auto-scaling and blue-green deployments of microservices</task>
-         <task>Architected a solution to provide applications and systems "Visibility" for our customers using ELK for logs, Graphite for metrics, and Sensu for alerts</task>
-         <task>Built and maintained centralized, per-datacenter, secure, multi-tenant, ELK-stack clusters for "Visibility" using Elasticsearch, Kibana, Logstash, ElastAlert, and ReadonlyREST</task>
-         <task>Created go app that generated Sensu checks for services running inside Kubernetes, querying API for services annotated with configmaps that describe alert thresholds</task>
-         <task>Deployed Jenkins 2.0 integrated with GitLab for CICD.  Built shared pipelines (as code) to build all our RPMs, Docker images, and Puppet modules</task>
-         <task>Made and/or used rspec-tested Puppet 4 modules to deploy all of the above</task>
-         <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, SELinux, DNS, and metrics</task>
-         <task>Used Packer to bake Azure images for faster provisioning</task>
-         <task>Setup a CI/CD pipeline to package each customer's "visibility" configurations (Kibana dashboards, Logstash configs, ElastAlert rules, and Grafana dashboards) and install them on the appropriate clusters</task>
-         <task>Documented our platforms and stacks, evangelized them to our customers, and assisted with customer on-boarding</task>
-       </tasks>
-     </job>
-      <job>
-        <title>Principal Software Engineer</title>
-        <start_date>January 2012</start_date>
-        <end_date>September 2016</end_date>
-        <company>
-          <name>Nuance Communications</name>
-          <url>https://www.nuance.com/</url>
-          <location>Durham, NC</location>
-        </company>
-        <org>
-          <division>Mobile division</division>
-          <department>TextIO R&amp;D</department>
-          <team>Connect Operations team</team>
-        </org>
-        <projects>
-          <project><name>Swype Connect</name></project>
-          <project><name>Language Lab</name></project>
-        </projects>
-        <tasks>
-          <task>Swype was acquired by Nuance!</task>
-          <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance, allowing us to scale to hundreds of millions users</task>
-          <task>Improved visibility of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
-          <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
-          <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
-          <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
-          <task>Built second API in Go, wrapping core business logic written in C, to support real-time predictions in the cloud</task>
-          <task>Assumed responsibility of legacy Java/Spring language database management system</task>
-          <task>Built server support for on-device storefront</task>
-          <task>Deployed and support applications in Chinese datacenters</task>
-        </tasks>
-      </job>
-      <job>
-        <title>Senior Systems Engineer</title>
-        <start_date>June 2011</start_date>
-        <end_date>December 2011</end_date>
-        <company>
-          <name>Swype</name>
-          <url>http://www.swype.com/</url>
-          <location>Durham, NC</location>
-        </company>
-        <org>
-          <department>Engineering</department>
-          <team>Connect Operations team</team>
-        </org>
-        <projects>
-          <project><name>Swype Connect</name></project>
-        </projects>
-        <tasks>
-          <task>Came on board to lead the effort of building a high-scale web-service to support tens of millions of mobile transactions per day, to enhance phones using the Swype keyboard</task>
-          <task>Built a multi-datacenter, geographically redundant, Python/WSGI web-service to support millions of write-heavy requests per day, backed by a similarly redundant Cassandra cluster</task>
-          <task>Hosted in Amazon Web Services, for ease of build-out and managed infrastructure, utilizing EC2, AutoScale, CloudFront, CloudWatch, S3, Route53, RDS, ElasticCache</task>
-          <task>Used EC2 auto-scaling to ensure a timely response to customer demands</task>
-          <task>Built a true DevOps team, using PagerDuty, Nagios, Graylog, SyslogNG, and EC2, plus our stateless custom web service that we both developed and operated in Production</task>
-        </tasks>
-      </job>
-      <job>
-         <title>Principal Software Engineer</title>
-         <start_date>September 2002</start_date>
-         <end_date>June 2011</end_date>
-         <company>
-            <name>BBH Media</name>
-            <location>Raleigh, NC</location>
-         </company>
-         <org>
-           <department>Engineering team</department>
-         </org>
-         <projects>
-      			<project>
-      				<name>Redesign of websites using Zend Framework</name>
-      			</project>
-            <project>
-               <name>JEE(J2EE) Content Management System</name>
-            </project>
-            <project>
-               <name>PHP Electronic Zine CMS</name>
-            </project>
-            <project>
-               <name>Multi-currency Payment Processing System</name>
-            </project>
-            <project>
-               <name>Public PHP &amp; PERL scripts</name>
-            </project>
-         </projects>
-         <tasks>
-      			<task>Architected and developed and new website platform; moving all high-volume sites into a centralized, load-balanced, three-tier, standardized codebase using jQuery, PHP on Zend Framework, SOAP, JPA, EJB3, MySQL, and Lucene</task>
-      			<task>Built a web-service-exposed, JEE middleware to power customer self-service and management portal using JPA, EJB3, SOAP, and MySQL</task>
-            <task>Architected, designed, and developed a scalable, clustered, high-availability, J2EE-based content authoring and management system using JBoss, Hibernate, JSP2, XSLT, and SQL Server</task>
-            <task>Designed, optimized, and normalized all major business systems' database schemas</task>
-			      <task>Developed custom content management system using JBoss, EJB, Struts, Velocity, JSP, JSTL, and PostgreSQL</task>
-            <task>Made heavy use of DHTML and JavaScript for both front-facing and internal applications, including remote scripting and AJAX</task>
-            <task>Built and extended a custom PHP-based CMS system for e-zine publication</task>
-            <task>Wrote functional, integration, and unit tests</task>
-            <task>Administered CruiseControl and Hudson continuous integration and build systems</task>
-			      <task>Mentored junior and new engineering hires</task>
-            <task>Documented requirements for outsourced projects</task>
-            <task>Designed and built internal web applications to automate internal business functions, such as content publishing, indexing, and search</task>
-            <task>Built international, multi-currency money management system, including automated thirty-party import and international credit card processing</task>
-            <task>Created and maintained PHP and PERL scripts for website management and content validation</task>
-            <task>Ported and rewrote legacy PERL scripts with more robust PHP scripts, also adding new site features such as pagination</task>
-            <task>De facto and acting Linux, BSD, and Windows system administrator</task>
-         </tasks>
-      </job>
+    <job>
+      <title>Director - Lead Engineer</title>
+      <start_date>May 2020</start_date>
+      <end_date>August 2022</end_date>
+      <company>
+        <name>Deutsche Bank</name>
+        <url>https://www.db.com/</url>
+        <location>Cary, NC</location>
+      </company>
+      <org>
+        <division>CTO</division>
+        <department>Cloud Services</department>
+        <team>Core Engineering</team>
+      </org>
+      <projects>
+        <project>
+          <name>GCP Control Plane</name>
+        </project>
+        <project>
+          <name>Landing Zones</name>
+        </project>
+        <project>
+          <name>Module Authoring Framework</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Completed Global Enterprise Engineer program to be in the top 5% of the bank's engineers</task>
+        <task>Created and led a multi-region engineering team to build and operate a GCP Control Plane</task>
+        <task>Designed Landing Zone platform to enable end users to safely self-service GCP infrastructure using GitOps on GitHub Actions (CI/CD) and Terraform Enterprise</task>
+        <task>Secured Terraform Enterprise with SAML, OAuth against AAD and later GitHub OIDC to meet banking regulations</task>
+        <task>Architected mechanisms to allow the platform to be safely extended by the community via inner-sourcing</task>
+        <task>Delivered Landing Zones to 250+ application and infrastructure teams</task>
+        <task>Constructed standardized Terraform module authoring framework</task>
+        <task>Regularized GCP organization management via Terraform Infrastructure as Code</task>
+        <task>Evangelized the platform across the bank by producing documentation, training, communities of practice, and events</task>
+        <task>Participated in compliance audits</task>
+      </tasks>
+    </job>
+    <job>
+      <title>Vice President - Lead Engineer</title>
+      <start_date>February 2019</start_date>
+      <end_date>May 2020</end_date>
+      <company>
+        <name>Deutsche Bank</name>
+        <url>https://www.db.com/</url>
+        <location>Cary, NC</location>
+      </company>
+      <org>
+        <division>Global Transaction Banking</division>
+        <department>Digital Office</department>
+        <team>Data Platform</team>
+      </org>
+      <projects>
+        <project>
+          <name>GTB Data Platform</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Created a Data Platform out of native Azure components, namely Databricks, DataLake, SQL DataWarehouse, EventHub, Monitor, and AzureML</task>
+        <task>Automated and orchestrated Data Platform using Azure DevOps, Terraform, Docker, and Ansible</task>
+        <task>Evaluated Cloud Custodian in Azure</task>
+      </tasks>
+    </job>
+    <job>
+      <title>Senior Principal Software Engineer</title>
+      <start_date>September 2016</start_date>
+      <end_date>February 2019</end_date>
+      <company>
+        <name>Nuance Communications</name>
+        <url>https://www.nuance.com/</url>
+        <location>Raleigh, NC</location>
+      </company>
+      <org>
+        <division>Automotive division</division>
+        <department>Cloud Reliability Engineering</department>
+        <team>Infrastructure team</team>
+      </org>
+      <projects>
+        <project>
+          <name>Mobile Compute Platform</name>
+        </project>
+        <project>
+          <name>Mobile "Visibility" stack</name>
+        </project>
+        <project>
+          <name>Mobile Shared and Core Services</name>
+        </project>
+        <project>
+          <name>Jenkins 2.0 CI/CD pipelines</name>
+        </project>
+        <project>
+          <name>Kubernetes Sensu Checks</name>
+        </project>
+        <project>
+          <name>Swype Connect</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Swype's Connect Operations team moved to the hosting group for the Mobile division, which later became to the new Automotive division</task>
+        <task>Remained in 1st tier on-call rotation for Swype Connect</task>
+        <task>Implemented Foreman for system management and provisioning of bare metal, ESX, and Azure instances</task>
+        <task>Deployed infrastructure world-wide in Azure using purpose-built and reusable Terraform modules</task>
+        <task>Integrated Katello for management of system and application content across all datacenters</task>
+        <task>Rolled out FreeIPA to centrally manage SSL certificates, Kerberos, DNS, system auth (sssd), and application auth</task>
+        <task>Designed and built proof-of-concept multi-tenant compute platform using Mesos, Marathon, Consul, Calico, HAProxy and Docker to support auto-scaling and blue-green deployments of microservices</task>
+        <task>Architected a solution to provide applications and systems "Visibility" for our customers using ELK for logs, Graphite for metrics, and Sensu for alerts</task>
+        <task>Built and maintained centralized, per-datacenter, secure, multi-tenant, ELK-stack clusters for "Visibility" using Elasticsearch, Kibana, Logstash, ElastAlert, and ReadonlyREST</task>
+        <task>Created go app that generated Sensu checks for services running inside Kubernetes, querying API for services annotated with configmaps that describe alert thresholds</task>
+        <task>Deployed Jenkins 2.0 integrated with GitLab for CICD. Built shared pipelines (as code) to build all our RPMs, Docker images, and Puppet modules</task>
+        <task>Made and/or used rspec-tested Puppet 4 modules to deploy all of the above</task>
+        <task>Authored Puppet 4 "base" system module to manage all fundamental aspects of our systems, including: puppet, mco, auth, sshd, time, osquery, limits, firewall, auditd, packages, sysctl, monitoring, logs, SELinux, DNS, and metrics</task>
+        <task>Used Packer to bake Azure images for faster provisioning</task>
+        <task>Setup a CI/CD pipeline to package each customer's "visibility" configurations (Kibana dashboards, Logstash configs, ElastAlert rules, and Grafana dashboards) and install them on the appropriate clusters</task>
+        <task>Documented our platforms and stacks, evangelized them to our customers, and assisted with customer on-boarding</task>
+      </tasks>
+    </job>
+    <job>
+      <title>Principal Software Engineer</title>
+      <start_date>January 2012</start_date>
+      <end_date>September 2016</end_date>
+      <company>
+        <name>Nuance Communications</name>
+        <url>https://www.nuance.com/</url>
+        <location>Durham, NC</location>
+      </company>
+      <org>
+        <division>Mobile division</division>
+        <department>TextIO R&amp;D</department>
+        <team>Connect Operations team</team>
+      </org>
+      <projects>
+        <project>
+          <name>Swype Connect</name>
+        </project>
+        <project>
+          <name>Language Lab</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Swype was acquired by Nuance!</task>
+        <task>Continued the development and improvement of the Swype Connect API, with the main focus on performance, allowing us to scale to hundreds of millions users</task>
+        <task>Improved visibility of our connected services, using Graphite, statsd, collectd, Grafana, Kibana, and SNMP, giving us insight and trending data into how our application is performing and being used</task>
+        <task>Switched from EC2 Auto-Scale to a Puppet managed, but manually scaled system</task>
+        <task>Migrated SwypeConnect from AWS to an in-house, managed ESX cluster</task>
+        <task>Used Hadoop and Pig to mine Cassandra for application usage and trend data</task>
+        <task>Built second API in Go, wrapping core business logic written in C, to support real-time predictions in the cloud</task>
+        <task>Assumed responsibility of legacy Java/Spring language database management system</task>
+        <task>Built server support for on-device storefront</task>
+        <task>Deployed and support applications in Chinese datacenters</task>
+      </tasks>
+    </job>
+    <job>
+      <title>Senior Systems Engineer</title>
+      <start_date>June 2011</start_date>
+      <end_date>December 2011</end_date>
+      <company>
+        <name>Swype</name>
+        <url>http://www.swype.com/</url>
+        <location>Durham, NC</location>
+      </company>
+      <org>
+        <department>Engineering</department>
+        <team>Connect Operations team</team>
+      </org>
+      <projects>
+        <project>
+          <name>Swype Connect</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Came on board to lead the effort of building a high-scale web-service to support tens of millions of mobile transactions per day, to enhance phones using the Swype keyboard</task>
+        <task>Built a multi-datacenter, geographically redundant, Python/WSGI web-service to support millions of write-heavy requests per day, backed by a similarly redundant Cassandra cluster</task>
+        <task>Hosted in Amazon Web Services, for ease of build-out and managed infrastructure, utilizing EC2, AutoScale, CloudFront, CloudWatch, S3, Route53, RDS, ElasticCache</task>
+        <task>Used EC2 auto-scaling to ensure a timely response to customer demands</task>
+        <task>Built a true DevOps team, using PagerDuty, Nagios, Graylog, SyslogNG, and EC2, plus our stateless custom web service that we both developed and operated in Production</task>
+      </tasks>
+    </job>
+    <job>
+      <title>Principal Software Engineer</title>
+      <start_date>September 2002</start_date>
+      <end_date>June 2011</end_date>
+      <company>
+        <name>BBH Media</name>
+        <location>Raleigh, NC</location>
+      </company>
+      <org>
+        <department>Engineering team</department>
+      </org>
+      <projects>
+        <project>
+          <name>Redesign of websites using Zend Framework</name>
+        </project>
+        <project>
+          <name>JEE(J2EE) Content Management System</name>
+        </project>
+        <project>
+          <name>PHP Electronic Zine CMS</name>
+        </project>
+        <project>
+          <name>Multi-currency Payment Processing System</name>
+        </project>
+        <project>
+          <name>Public PHP &amp; PERL scripts</name>
+        </project>
+      </projects>
+      <tasks>
+        <task>Architected and developed and new website platform; moving all high-volume sites into a centralized, load-balanced, three-tier, standardized codebase using jQuery, PHP on Zend Framework, SOAP, JPA, EJB3, MySQL, and Lucene</task>
+        <task>Built a web-service-exposed, JEE middleware to power customer self-service and management portal using JPA, EJB3, SOAP, and MySQL</task>
+        <task>Architected, designed, and developed a scalable, clustered, high-availability, J2EE-based content authoring and management system using JBoss, Hibernate, JSP2, XSLT, and SQL Server</task>
+        <task>Designed, optimized, and normalized all major business systems' database schemas</task>
+        <task>Developed custom content management system using JBoss, EJB, Struts, Velocity, JSP, JSTL, and PostgreSQL</task>
+        <task>Made heavy use of DHTML and JavaScript for both front-facing and internal applications, including remote scripting and AJAX</task>
+        <task>Built and extended a custom PHP-based CMS system for e-zine publication</task>
+        <task>Wrote functional, integration, and unit tests</task>
+        <task>Administered CruiseControl and Hudson continuous integration and build systems</task>
+        <task>Mentored junior and new engineering hires</task>
+        <task>Documented requirements for outsourced projects</task>
+        <task>Designed and built internal web applications to automate internal business functions, such as content publishing, indexing, and search</task>
+        <task>Built international, multi-currency money management system, including automated thirty-party import and international credit card processing</task>
+        <task>Created and maintained PHP and PERL scripts for website management and content validation</task>
+        <task>Ported and rewrote legacy PERL scripts with more robust PHP scripts, also adding new site features such as pagination</task>
+        <task>De facto and acting Linux, BSD, and Windows system administrator</task>
+      </tasks>
+    </job>
 
-      <job>
-         <title>Lead Engineer</title>
-         <start_date>May 2002</start_date>
-         <end_date>September 2002</end_date>
-         <company>
-            <name>Sun Microsystems</name>
-            <url>http://www.sun.com/</url>
-            <location>Menlo Park, CA</location>
-         </company>
-         <org>
-           <division>Internal Support</division>
-           <department>Developer Web Services</department>
-         </org>
-         <projects>
-            <project>
-               <name>Java Community Process</name>
-               <url>https://www.jcp.org/</url>
-            </project>
-            <project>
-               <name>Developer Community Knowledge</name>
-            </project>
-         </projects>
+    <job>
+      <title>Lead Engineer</title>
+      <start_date>May 2002</start_date>
+      <end_date>September 2002</end_date>
+      <company>
+        <name>Sun Microsystems</name>
+        <url>http://www.sun.com/</url>
+        <location>Menlo Park, CA</location>
+      </company>
+      <org>
+        <division>Internal Support</division>
+        <department>Developer Web Services</department>
+      </org>
+      <projects>
+        <project>
+          <name>Java Community Process</name>
+          <url>https://www.jcp.org/</url>
+        </project>
+        <project>
+          <name>Developer Community Knowledge</name>
+        </project>
+      </projects>
 
-         <tasks>
-            <task>Led engineering effort for devCK, Developer Community Knowledge project</task>
-            <task>Main developer for reimplementation of JCP site, tasks included:</task>
-            <task>Redesigning the entire DB schema, as well as creating object-relational mapping</task>
-            <task>Porting and upgrading the administrative site from old Vignette TCL to the new Java platform</task>
-            <task>Rebuilding the public website from JSP (Model 2) site to MVC, as well as using the new data model</task>
-         </tasks>
-      </job>
+      <tasks>
+        <task>Led engineering effort for devCK, Developer Community Knowledge project</task>
+        <task>Main developer for reimplementation of JCP site, tasks included:</task>
+        <task>Redesigning the entire DB schema, as well as creating object-relational mapping</task>
+        <task>Porting and upgrading the administrative site from old Vignette TCL to the new Java platform</task>
+        <task>Rebuilding the public website from JSP (Model 2) site to MVC, as well as using the new data model</task>
+      </tasks>
+    </job>
 
-      <job>
-         <title>Java Engineer</title>
-         <start_date>September 2001</start_date>
-         <end_date>January 2002</end_date>
-         <company>
-            <name>James Irvine Foundation</name>
-            <url>https://www.irvine.org/</url>
-            <location>San Francisco, CA</location>
-         </company>
-         <org>
-           <team>Systems Engineering team</team>
-         </org>
-         <projects>
-            <project>
-               <name>Coral Connect</name>
-            </project>
-         </projects>
+    <job>
+      <title>Java Engineer</title>
+      <start_date>September 2001</start_date>
+      <end_date>January 2002</end_date>
+      <company>
+        <name>James Irvine Foundation</name>
+        <url>https://www.irvine.org/</url>
+        <location>San Francisco, CA</location>
+      </company>
+      <org>
+        <team>Systems Engineering team</team>
+      </org>
+      <projects>
+        <project>
+          <name>Coral Connect</name>
+        </project>
+      </projects>
 
-         <tasks>
-            <task>Independently contracted with the James Irvine Foundation to complete Coral Connect project.</task>
-            <task>Designed and implemented message boards, file storage, address book, and other interactive services of the project using Arsdigita Community System, XML, XSL, and Oracle 8i.</task>
-            <task>Configured qmail, Courier IMAP, JWMA Web mail, and ACS for Java on Solaris 2.8 for custom integrated webmail feature.</task>
-         </tasks>
-      </job>
+      <tasks>
+        <task>Independently contracted with the James Irvine Foundation to complete Coral Connect project.</task>
+        <task>Designed and implemented message boards, file storage, address book, and other interactive services of the project using Arsdigita Community System, XML, XSL, and Oracle 8i.</task>
+        <task>Configured qmail, Courier IMAP, JWMA Web mail, and ACS for Java on Solaris 2.8 for custom integrated webmail feature.</task>
+      </tasks>
+    </job>
 
-      <job>
-         <title>Java Systems Engineer</title>
-         <start_date>March 2001</start_date>
-         <end_date>September 2001</end_date>
-         <company>
-            <name>Liquid Thinking</name>
-            <location>San Francisco, CA</location>
-         </company>
-         <org>
-           <team>Systems Engineering team</team>
-         </org>
-         <projects>
-            <project>
-               <name>Leap Track</name>
-               <url>http://www.leaptrack.com/</url>
-            </project>
-            <project>
-               <name>Cypress Semiconductor</name>
-            </project>
-            <project>
-               <name>Certicom</name>
-               <url>https://www.certicom.com/</url>
-            </project>
-            <project>
-               <name>Coral Connect</name>
-            </project>
-         </projects>
+    <job>
+      <title>Java Systems Engineer</title>
+      <start_date>March 2001</start_date>
+      <end_date>September 2001</end_date>
+      <company>
+        <name>Liquid Thinking</name>
+        <location>San Francisco, CA</location>
+      </company>
+      <org>
+        <team>Systems Engineering team</team>
+      </org>
+      <projects>
+        <project>
+          <name>Leap Track</name>
+          <url>http://www.leaptrack.com/</url>
+        </project>
+        <project>
+          <name>Cypress Semiconductor</name>
+        </project>
+        <project>
+          <name>Certicom</name>
+          <url>https://www.certicom.com/</url>
+        </project>
+        <project>
+          <name>Coral Connect</name>
+        </project>
+      </projects>
 
-         <tasks>
-            <task>Designed and implemented binary parsing, scoring, and other educational algorithms for an interactive educational product using Rational Rose and ATG Dynamo 4.5.</task>
-            <task>Architected and designed file system integration for intranet using Arsdigita Community System 4.6, XML, and XSL.</task>
-            <task>Implemented product family parametric search for Cypress Semiconductor using JavaScript, PERL, and ColdFusion.</task>
-            <task>Led Quality Assurance effort for Certicom site redesign using Logigear TrackGear.</task>
-            <task>Began work on CoralConnect but entire team was then down-sized (finished at subsequent position with James Irvine Foundation)</task>
-         </tasks>
-      </job>
+      <tasks>
+        <task>Designed and implemented binary parsing, scoring, and other educational algorithms for an interactive educational product using Rational Rose and ATG Dynamo 4.5.</task>
+        <task>Architected and designed file system integration for intranet using Arsdigita Community System 4.6, XML, and XSL.</task>
+        <task>Implemented product family parametric search for Cypress Semiconductor using JavaScript, PERL, and ColdFusion.</task>
+        <task>Led Quality Assurance effort for Certicom site redesign using Logigear TrackGear.</task>
+        <task>Began work on CoralConnect but entire team was then down-sized (finished at subsequent position with James Irvine Foundation)</task>
+      </tasks>
+    </job>
 
-      <job>
-         <title>Software Engineer</title>
-         <start_date>June 1999</start_date>
-         <end_date>February 2001</end_date>
-         <company>
-            <name>SRI International</name>
-            <url>https://www.sri.com/</url>
-            <location>Menlo Park, CA</location>
-         </company>
-         <org>
-           <division>Policy division</division>
-           <department>Center for Technology in Learning</department>
-         </org>
-         <projects>
-            <project>
-               <name>TeamLab</name>
-            </project>
-            <project>
-               <name>ChemSense</name>
-            </project>
-            <project>
-               <name>CILT KN</name>
-               <url>http://www.ciltkn.org/</url>
-            </project>
-            <project>
-               <name>URLex</name>
-            </project>
-            <project>
-               <name>LOM-IMS XML Toolkit</name>
-            </project>
-         </projects>
+    <job>
+      <title>Software Engineer</title>
+      <start_date>June 1999</start_date>
+      <end_date>February 2001</end_date>
+      <company>
+        <name>SRI International</name>
+        <url>https://www.sri.com/</url>
+        <location>Menlo Park, CA</location>
+      </company>
+      <org>
+        <division>Policy division</division>
+        <department>Center for Technology in Learning</department>
+      </org>
+      <projects>
+        <project>
+          <name>TeamLab</name>
+        </project>
+        <project>
+          <name>ChemSense</name>
+        </project>
+        <project>
+          <name>CILT KN</name>
+          <url>http://www.ciltkn.org/</url>
+        </project>
+        <project>
+          <name>URLex</name>
+        </project>
+        <project>
+          <name>LOM-IMS XML Toolkit</name>
+        </project>
+      </projects>
 
-         <tasks>
-            <task>Architected and implemented many web applications, online surveys, and web assessments using Java Servlets, JSPs, XML, and MySQL databases.</task>
-            <task>Designed and coded various reusable frameworks, from survey tools to database abstraction layers.</task>
-            <task>Co-developed and designed ChemSense, a Java-based Knowledge Building Environment for high-school chemistry students.</task>
-            <task>Built CILT Knowledge Network and affiliated web sites, and single sign-on framework in Cold Fusion and MySQL on Linux.</task>
-            <task>Designed and authored TeamLab, a Palm Pilot-based open-ended assessment application, desktop conduit, and website that supports off-line data collection and on-line statistical analysis.</task>
-            <task>Helped port URLex from Python code to Java.</task>
-            <task>Implemented Instructional Metadata IMS Metadata XML Generator tool, on a contract for Sun Microsystems</task>
-         </tasks>
-      </job>
+      <tasks>
+        <task>Architected and implemented many web applications, online surveys, and web assessments using Java Servlets, JSPs, XML, and MySQL databases.</task>
+        <task>Designed and coded various reusable frameworks, from survey tools to database abstraction layers.</task>
+        <task>Co-developed and designed ChemSense, a Java-based Knowledge Building Environment for high-school chemistry students.</task>
+        <task>Built CILT Knowledge Network and affiliated web sites, and single sign-on framework in Cold Fusion and MySQL on Linux.</task>
+        <task>Designed and authored TeamLab, a Palm Pilot-based open-ended assessment application, desktop conduit, and website that supports off-line data collection and on-line statistical analysis.</task>
+        <task>Helped port URLex from Python code to Java.</task>
+        <task>Implemented Instructional Metadata IMS Metadata XML Generator tool, on a contract for Sun Microsystems</task>
+      </tasks>
+    </job>
 
-   </experience>
+  </experience>
 
-   <skills>
-      <languages>
-         <language version="2.x">Python</language>
-         <language version="1.5">Java</language>
-         <language version="1.2">Go (Golang)</language>
-         <language>Javascript</language>
-         <language>Ruby</language>
-         <language version="2.0">JSP &amp; JSTL/EL</language>
-         <language>Scala</language>
-         <language>XML</language>
-         <language version="4.0">PHP</language>
-         <language version="4.0">DHTML &amp; XHTML</language>
-         <language>Groovy</language>
-         <language>XSLT &amp; FO/P</language>
-         <language version="5.6">PERL</language>
-         <language>Bash</language>
-         <language>Velocity</language>
-         <language>i18n</language>
-         <language>C &amp; C++</language>
-         <language>ColdFusion</language>
-         <language>Lisp</language>
-         <language>MIPS assembly</language>
-         <language version="6.0">InstallShield Script</language>
-      </languages>
+  <skills>
+    <languages>
+      <language version="2.x">Python</language>
+      <language version="1.5">Java</language>
+      <language version="1.2">Go (Golang)</language>
+      <language>Javascript</language>
+      <language>Ruby</language>
+      <language version="2.0">JSP &amp; JSTL/EL</language>
+      <language>Scala</language>
+      <language>XML</language>
+      <language version="4.0">PHP</language>
+      <language version="4.0">DHTML &amp; XHTML</language>
+      <language>Groovy</language>
+      <language>XSLT &amp; FO/P</language>
+      <language version="5.6">PERL</language>
+      <language>Bash</language>
+      <language>Velocity</language>
+      <language>i18n</language>
+      <language>C &amp; C++</language>
+      <language>ColdFusion</language>
+      <language>Lisp</language>
+      <language>MIPS assembly</language>
+      <language version="6.0">InstallShield Script</language>
+    </languages>
 
-      <databases>
-         <database>Cassandra</database>
-         <database>MongoDB</database>
-         <database>MySQL/Maria</database>
-         <database>PostgreSQL</database>
-         <database>MS SQL</database>
-         <database>Oracle</database>
-         <database>Solid</database>
-         <database>FileMaker Pro</database>
-         <database>mSQL</database>
-         <database>Access</database>
-      </databases>
+    <databases>
+      <database>Cassandra</database>
+      <database>MongoDB</database>
+      <database>MySQL/Maria</database>
+      <database>PostgreSQL</database>
+      <database>MS SQL</database>
+      <database>Oracle</database>
+      <database>Solid</database>
+      <database>FileMaker Pro</database>
+      <database>mSQL</database>
+      <database>Access</database>
+    </databases>
 
-      <platforms>
-         <platform>Kubernetes</platform>
-         <platform>Mesos</platform>
-         <platform version="4.0+">JBoss</platform>
-         <platform version="5.0+">Tomcat</platform>
-	       <platform version="1.7+">Zend Framework</platform>
-	       <platform version="2.0+">Spring</platform>
-         <platform>Resin</platform>
-         <platform version="4.0">ColdFusion</platform>
-         <platform version="6.0">Vignette</platform>
-         <platform version="4.5">ATG Dynamo</platform>
-         <platform version="4.6">Arsdigita ACS</platform>
-      </platforms>
+    <platforms>
+      <platform>Kubernetes</platform>
+      <platform>Mesos</platform>
+      <platform version="4.0+">JBoss</platform>
+      <platform version="5.0+">Tomcat</platform>
+      <platform version="1.7+">Zend Framework</platform>
+      <platform version="2.0+">Spring</platform>
+      <platform>Resin</platform>
+      <platform version="4.0">ColdFusion</platform>
+      <platform version="6.0">Vignette</platform>
+      <platform version="4.5">ATG Dynamo</platform>
+      <platform version="4.6">Arsdigita ACS</platform>
+    </platforms>
 
-      <tools>
-         <tool category="Web Servers">nginx, haproxy, uWSGI, gunicorn, Apache</tool>
-         <tool category="Provisioning">Terraform Enterprise, Foreman, Cobbler, Terraform, Packer, AWS CloudFormation, Azure Templates</tool>
-         <tool category="Container">Docker, Mesos, Kubernetes, Marathon</tool>
-         <tool category="Virtual Network">Calico, istio, Flannel, Weave, OpenVSwitch</tool>
-         <tool category="Service Discovery">Consul, Zookeeper, Etcd, MesosDNS</tool>
-         <tool category="Configuration Management">Puppet, Ansible, MCollective, Chef</tool>
-         <tool category="Search">ElasticSearch, Kibana, Logstash, ElastAlert, ReadonlyREST, SOLR, Lucene, Verity</tool>
-         <tool category="Monitoring">Sensu, Nagios, SNMP, Cacti, SyslogNG</tool>
-         <tool category="Metrics">Graphite, Prometheus, Carbon, Collectd, Statsd, Bucky</tool>
-         <tool category="Identity/Auth">FreeIPA, Vault, OpenLDAP, OpenID, OAuth, OIDC</tool>
-         <tool category="NoSQL">Cassandra, HBase, MongoDB, CouchDB, Riak</tool>
-         <tool category="Reporting">Spark, Hadoop, Pig, Hive, Pentaho, Jasper, Crystal Reports</tool>
-         <tool category="Messaging">RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
-         <tool category="IDE">IntelliJ IDEA, PyCharm, Eclipse, NetBeans, Xcode, Visual Studio, CodeWarrior, JBuilder</tool>
-         <tool category="Modeling">Visio, OmniGraffle, Rational Rose, Visual Paradigm, Poseidon, Argo UML</tool>
-         <tool category="Version Control">Git, GitHub, GitLab, Subversion, CVS, Perforce, SCCS, RCS</tool>
-         <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
-	 	   <tool category="Web Frameworks">Piral, React, Ember, Angular, jQuery, YUI</tool>
-         <tool category="Build">Ant, Jenkins, Travis, Hudson, Cruise Control, Maven, Ivy, Make</tool>
-         <tool category="Unit Testing">py.test, JUnit, Cobertura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
-	 	   <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
-         <tool category="Acceptance Testing">Inspec, rspec, Cucumber, serverspec</tool>
-	 	   <tool category="Caching">Redis, Memcache, APC, XCache</tool>
-         <tool category="Web/Integration Testing">Selenium, JProbe</tool>
-         <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
-         <tool category="MVC">Django, Ember, Angular, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
-         <tool category="Virtualization">AWS, Vagrant, Azure, ESX, VirtualBox, Xen</tool>
-         <tool category="Text Editor">vi(m), Atom, Emacs</tool>
-         <tool category="Installer">InstallShield, NSIS</tool>
-         <tool category="Command Line">GNU tools, Cygwin</tool>
-         <tool category="IM">Jabberd, Openfire</tool>
-         <tool category="Aspect Handling">AspectJ, JBossAOP</tool>
-      </tools>
-   </skills>
+    <tools>
+      <tool category="Web Servers">caddy, nginx, haproxy, uWSGI, gunicorn, Apache</tool>
+      <tool category="Provisioning">Terraform Enterprise, Foreman, Cobbler, Terraform, Packer, AWS CloudFormation, Azure Templates</tool>
+      <tool category="Container">Docker, Kubernetes, Mesos, Marathon</tool>
+      <tool category="Virtual Network">Calico, istio, Flannel, Weave, OpenVSwitch</tool>
+      <tool category="Service Discovery">Consul, Zookeeper, Etcd, MesosDNS</tool>
+      <tool category="Configuration Management">Puppet, Ansible, MCollective, Chef</tool>
+      <tool category="Search">ElasticSearch, Kibana, Logstash, ElastAlert, ReadonlyREST, SOLR, Lucene, Verity</tool>
+      <tool category="Monitoring">Sensu, Nagios, SNMP, Cacti, SyslogNG</tool>
+      <tool category="Metrics">Graphite, Prometheus, Carbon, Collectd, Statsd, Bucky</tool>
+      <tool category="Identity/Auth">FreeIPA, Vault, OpenLDAP, OpenID, OAuth, OIDC</tool>
+      <tool category="NoSQL">Cassandra, HBase, MongoDB, CouchDB, Riak</tool>
+      <tool category="Reporting">Spark, Hadoop, Pig, Hive, Pentaho, Jasper, Crystal Reports</tool>
+      <tool category="Messaging">Kafka, RabbitMQ, ActiveMQ, JBossMQ, JBoss Messaging</tool>
+      <tool category="IDE">Zed, IntelliJ IDEA, PyCharm, Eclipse, NetBeans, Xcode, Visual Studio, CodeWarrior, JBuilder</tool>
+      <tool category="Modeling">D2, Mermaid, PlantUML, Visio, OmniGraffle, Rational Rose</tool>
+      <tool category="Version Control">Git, GitHub, GitLab, Subversion, CVS, Perforce, SCCS, RCS</tool>
+      <tool category="Bug Tracking">JIRA, Bugzilla, Eventum, TrackGear</tool>
+      <tool category="Web Frameworks">Piral, React, Ember, Angular, jQuery, YUI</tool>
+      <tool category="Build">Ant, Maven, Ivy, Make</tool>
+      <tool category="CI/CD">GitHub Actions, Jenkins, Travis, Hudson, Cruise Control</tool>
+      <tool category="Unit Testing">py.test, JUnit, Cobertura, Mockito, EasyMock, JMock, Cactus, TestNG</tool>
+      <tool category="Performance Testing">JMeter, Apache Benchmark, JProbe</tool>
+      <tool category="Acceptance Testing">Inspec, rspec, Cucumber, serverspec</tool>
+      <tool category="Caching">Redis, Memcache, APC, XCache</tool>
+      <tool category="Web/Integration Testing">Selenium, JProbe</tool>
+      <tool category="Persistence">Hibernate, JPA, EJB, OJB</tool>
+      <tool category="MVC">Django, Struts, Grails, Spring MVC, Cake PHP, Bebop</tool>
+      <tool category="Virtualization">AWS, Vagrant, Azure, ESX, VirtualBox, Xen</tool>
+      <tool category="Text Editor">vi(m), Atom, Emacs</tool>
+      <tool category="Installer">InstallShield, NSIS</tool>
+      <tool category="Command Line">GNU tools, Cygwin</tool>
+      <tool category="IM">Jabberd, Openfire</tool>
+      <tool category="Aspect Handling">AspectJ, JBossAOP</tool>
+    </tools>
+  </skills>
 
-   <publications>
-      <publication>
-         <title>Disambiguating Drag-and-Drop: The Click-and-Fill alternative to managing hierarchies</title>
-         <publisher>CHI 2000 Conference Proceedings</publisher>
-         <description>I explained my implementation of a new "Drag and Drop" like interface</description>
-         <language>English</language>
-         <publish_date>April 6, 2000</publish_date>
-      </publication>
-      <publication>
-         <title>Workpad + Palm Series Powered Pack 2000 Edition</title>
-         <publisher>ASCII Corp.</publisher>
-         <description>My software was written up, rated, and included on accompanying CD-ROM</description>
-         <language>Japanese</language>
-         <publish_date>March 10, 2000</publish_date>
-      </publication>
-      <publication>
-         <title>Workpad + Palm Series Powered Pack</title>
-         <publisher>ASCII Corp.</publisher>
-         <description>My software was written up, rated, and included on accompanying CD-ROM</description>
-         <language>Japanese</language>
-         <publish_date>June 11, 1999</publish_date>
-      </publication>
-   </publications>
+  <publications>
+    <publication>
+      <title>Disambiguating Drag-and-Drop: The Click-and-Fill alternative to managing hierarchies</title>
+      <publisher>CHI 2000 Conference Proceedings</publisher>
+      <description>I explained my implementation of a new "Drag and Drop" like interface</description>
+      <language>English</language>
+      <publish_date>April 6, 2000</publish_date>
+    </publication>
+    <publication>
+      <title>Workpad + Palm Series Powered Pack 2000 Edition</title>
+      <publisher>ASCII Corp.</publisher>
+      <description>My software was written up, rated, and included on accompanying CD-ROM</description>
+      <language>Japanese</language>
+      <publish_date>March 10, 2000</publish_date>
+    </publication>
+    <publication>
+      <title>Workpad + Palm Series Powered Pack</title>
+      <publisher>ASCII Corp.</publisher>
+      <description>My software was written up, rated, and included on accompanying CD-ROM</description>
+      <language>Japanese</language>
+      <publish_date>June 11, 1999</publish_date>
+    </publication>
+  </publications>
 
-   <education>
-      <experience>
-         <start_date>1995</start_date>
-         <end_date>2000</end_date>
-         <institution>
-            <name>Goucher College</name>
-            <location>Towson, MD</location>
-            <url>https://www.goucher.edu/</url>
-         </institution>
-         <degree>BA in Computer Science</degree>
-         <highlights>Courses in Java, LISP, 3D Graphics, A.I., Assembly, Software Engineering, Algorithms, Hardware Architecture, and Computation</highlights>
-      </experience>
+  <education>
+    <experience>
+      <start_date>1995</start_date>
+      <end_date>2000</end_date>
+      <institution>
+        <name>Goucher College</name>
+        <location>Towson, MD</location>
+        <url>https://www.goucher.edu/</url>
+      </institution>
+      <degree>BA in Computer Science</degree>
+      <highlights>Courses in Java, LISP, 3D Graphics, A.I., Assembly, Software Engineering, Algorithms, Hardware Architecture, and Computation</highlights>
+    </experience>
 
-      <experience>
-         <start_date>Summers 1994</start_date>
-         <end_date>1997</end_date>
-         <institution>
-            <name>University of Delaware</name>
-            <location>Newark, DE</location>
-            <url>https://www.udel.edu/</url>
-         </institution>
-         <highlights>Graduate &amp; undergraduate courses in C, C++, compiler design, computer graphics, and multimedia design.</highlights>
-      </experience>
-   </education>
+    <experience>
+      <start_date>Summers 1994</start_date>
+      <end_date>1997</end_date>
+      <institution>
+        <name>University of Delaware</name>
+        <location>Newark, DE</location>
+        <url>https://www.udel.edu/</url>
+      </institution>
+      <highlights>Graduate &amp; undergraduate courses in C, C++, compiler design, computer graphics, and multimedia design.</highlights>
+    </experience>
+  </education>
 
-   <references>
-      <reference>Available upon request</reference>
-   </references>
+  <references>
+    <reference>Available upon request</reference>
+  </references>
 
 </resume>
