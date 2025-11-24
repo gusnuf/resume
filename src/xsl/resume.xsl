@@ -1,70 +1,83 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-<xsl:output indent="yes" method="html"/>
+<xsl:output indent="yes" method="html" />
 
 
 <!-- These must be provided externally, probably by ant -->
-<xsl:param name="datestamp"/>
-<xsl:param name="online_prefix"/>
+<xsl:param name="datestamp" />
+<xsl:param name="online_prefix" />
 
 
 <xsl:template match="/resume">
 
 <html>
 <head>
-  <title>Resume of <xsl:value-of select="contact/name"/></title>
+  <title>Resume of <xsl:value-of select="contact/name" /></title>
 </head>
 <body>
 
 <div id="centercontent">
 
-	<span style="font-size:25px; font-weight:bold"><xsl:value-of select="contact/name"/></span><br/> <xsl:if test="contact/street"> <xsl:value-of
-select="contact/street"/>, </xsl:if> <xsl:value-of select="contact/city"/><xsl:text>, </xsl:text><xsl:value-of select="contact/state"/> <xsl:text>
-</xsl:text><xsl:value-of select="contact/zip"/><br/> <table cellpadding="0" cellspacing="0"> <tr> <xsl:if test="contact/phone/@type='h'"> <th
-align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h']"/></td> <td width="15"/> </xsl:if> <xsl:if test="contact/phone/@type='m'">
-<th align="right">Mobile:&#160;</th> <td><xsl:value-of select="contact/phone[@type='m']"/></td> </xsl:if> </tr> <tr> <th align="right">Email:&#160;</th>
-<td><xsl:value-of select="contact/email"/></td> <td width="15"/> <th align="right">Web:&#160;</th> <td><a href="{contact/url}"><xsl:value-of
-select="contact/url"/></a></td> </tr> </table>
+	<span style="font-size:25px; font-weight:bold"><xsl:value-of select="contact/name" /></span><br /> <xsl:if
+            test="contact/street"
+          > <xsl:value-of select="contact/street" />, </xsl:if> <xsl:value-of select="contact/city" /><xsl:text>, </xsl:text><xsl:value-of
+            select="contact/state"
+          /> <xsl:text>
+</xsl:text><xsl:value-of select="contact/zip" /><br /> <table cellpadding="0" cellspacing="0"> <tr> <xsl:if
+                test="contact/phone/@type='h'"
+              > <th align="right">Home:&#160;</th> <td><xsl:value-of select="contact/phone[@type='h']" /></td> <td
+                  width="15"
+                /> </xsl:if> <xsl:if test="contact/phone/@type='m'">
+<th align="right">Mobile:&#160;</th> <td><xsl:value-of select="contact/phone[@type='m']" /></td> </xsl:if> </tr> <tr> <th
+                align="right"
+              >Email:&#160;</th>
+<td><xsl:value-of select="contact/email" /></td> <td width="15" /> <th align="right">Web:&#160;</th> <td><a
+                  href="{contact/url}"
+                ><xsl:value-of select="contact/url" /></a></td> </tr> </table>
 
-	<hr/>
-    <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="$datestamp"/>.</span><br />
+	<hr />
+    <span id="updated" style="font-size=8pt">Last Updated: <xsl:value-of select="$datestamp" />.</span><br />
     <span id="online" style="font-size=8pt">
-    	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/base"/></xsl:attribute><xsl:value-of select="online/base"/></a> for the most current version, available in
+    	Visit <a><xsl:attribute name="href"><xsl:value-of select="online/base" /></xsl:attribute><xsl:value-of
+                select="online/base"
+              /></a> for the most current version, available in
     	<xsl:for-each select="online/formats/format">
 			<xsl:if test="position() != 1">
 				<xsl:text>, </xsl:text>
 			</xsl:if>
     		<a>
     		<xsl:attribute name="href">
-				<xsl:value-of select="../../base"/>/<xsl:value-of select="$online_prefix"/>.<xsl:value-of select="@extension"/>
+				<xsl:value-of select="../../base" />/<xsl:value-of select="$online_prefix" />.<xsl:value-of select="@extension" />
     		</xsl:attribute>
-    		<xsl:value-of select="."/>
+    		<xsl:value-of select="." />
     		</a>
     	</xsl:for-each> versions, or
-    	<a><xsl:attribute name="href"><xsl:value-of select="online/source"/></xsl:attribute><xsl:value-of select="online/source"/></a> to see the code that created this resume.
+    	<a><xsl:attribute name="href"><xsl:value-of select="online/source" /></xsl:attribute><xsl:value-of
+                select="online/source"
+              /></a> to see the code that created this resume.
 	</span>
 
 
-	<p/>
+	<p />
 
 
 	<span class="header" style="font-weight:bold">SUMMARY</span><br />
-	<xsl:value-of select="summary"/>
+	<xsl:value-of select="summary" />
 
 
-	<p/>
+	<p />
 
 
 	<span class="header" style="font-weight:bold">HIGHLIGHTS</span><br />
 	<ul>
 	  <xsl:for-each select="highlights/highlight">
-	    <li><xsl:value-of select="."/></li>
+	    <li><xsl:value-of select="." /></li>
 	  </xsl:for-each>
 	</ul>
 
 
-	<p/>
+	<p />
 
 
 	<span class="header" style="font-weight:bold">EXPERIENCE</span><br />
@@ -78,55 +91,55 @@ select="contact/url"/></a></td> </tr> </table>
               </xsl:variable>
 	        <tr>
             <td>
- 	        <b><xsl:value-of select="title"/></b>,
-	        <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/>
-          <br/>
+ 	        <b><xsl:value-of select="title" /></b>,
+	        <xsl:value-of select="start_date" /> - <xsl:value-of select="end_date" />
+          <br />
           <em><xsl:for-each select="org/*">
-            <xsl:value-of select="."/>
+            <xsl:value-of select="." />
             <xsl:if test="position() != last()">, </xsl:if>
           </xsl:for-each></em>
             </td>
 	          <td>
-	             <a href="{company/url}"><xsl:value-of select="company/name"/></a>
+	             <a href="{company/url}"><xsl:value-of select="company/name" /></a>
 	          </td>
           <td>
-	        <xsl:value-of select="company/location"/>
+	        <xsl:value-of select="company/location" />
           </td>
       </tr>
 	    <tr>
 	      <td colspan="{$colspan}" rowspan="2" valign="top">
 	        <ul>
  	          <xsl:for-each select="tasks/task">
-	            <li><xsl:value-of select="."/></li>
+	            <li><xsl:value-of select="." /></li>
 	          </xsl:for-each>
  	        </ul>
 	      </td>
 	      <xsl:if test="$colspan = 2">
 	        <td width="25%" height="10%" bgcolor="#d4d4c4" valign="top" style="font-size:12px; font-family:helvetica">
-                  <span style="font-weight:bold; text-decoration:underline">PROJECTS</span>:<br/>
+                  <span style="font-weight:bold; text-decoration:underline">PROJECTS</span>:<br />
 	          <xsl:for-each select="projects/project">
 	            <xsl:choose>
-                      <xsl:when test="url">+ <a href="{url}"><xsl:value-of select="name"/></a><br/></xsl:when>
-		      <xsl:otherwise>+ <xsl:value-of select="name"/><br/></xsl:otherwise>
+                      <xsl:when test="url">+ <a href="{url}"><xsl:value-of select="name" /></a><br /></xsl:when>
+		      <xsl:otherwise>+ <xsl:value-of select="name" /><br /></xsl:otherwise>
                     </xsl:choose>
 	          </xsl:for-each>
 	        </td>
-	        <td/>
+	        <td />
               </xsl:if>
  	    </tr>
 	    <tr>
 	    <xsl:if test="$colspan = 2">
-	       <td/>
+	       <td />
 	    </xsl:if>
             </tr>
 	    <tr>
-              <td colspan="3" height="1"/>
+              <td colspan="3" height="1" />
             </tr>
   	    </xsl:for-each>
 	  </table>
-	  <p/>
+	  <p />
 
-	<p/>
+	<p />
 
 
 	<span class="header" style="font-weight:bold">COMPUTER SKILLS</span><br />
@@ -135,71 +148,74 @@ select="contact/url"/></a></td> </tr> </table>
 	  <xsl:if test="position() != 1">
             <xsl:text>, </xsl:text>
       </xsl:if>
-	  <xsl:value-of select="."/>
+	  <xsl:value-of select="." />
  	</xsl:for-each>
 
-	<p/>
+	<p />
 
 	<b>Databases</b>:<br />
 	<xsl:for-each select="skills/databases/database">
 	  <xsl:if test="position() != 1">
             <xsl:text>, </xsl:text>
       </xsl:if>
-	  <xsl:value-of select="."/>
+	  <xsl:value-of select="." />
  	</xsl:for-each>
 
-	<p/>
+	<p />
 
 	<b>Platforms</b>:<br />
 	<xsl:for-each select="skills/platforms/platform">
 	  <xsl:if test="position() != 1">
             <xsl:text>, </xsl:text>
       </xsl:if>
-	  <xsl:value-of select="."/>
+	  <xsl:value-of select="." />
  	</xsl:for-each>
 
-	<p/>
+	<p />
 
 	<b>Tools</b>:<br />
 	<xsl:for-each select="skills/tools/tool">
-	  &#160;&#160;<b><xsl:value-of select="@category" /></b><xsl:text>: </xsl:text><xsl:value-of select="."/><br />
+	  &#160;&#160;<b><xsl:value-of select="@category" /></b><xsl:text>: </xsl:text><xsl:value-of select="." /><br />
  	</xsl:for-each>
 
-	<p/>
+	<xsl:if test="publications/publication">
+	<p />
 
 	<span class="header" style="font-weight:bold">PUBLICATIONS</span><br />
     <table>
 	<xsl:for-each select="publications/publication">
-	  <u><xsl:value-of select="title"/></u>
+	  <u><xsl:value-of select="title" /></u>
       <br />
-      <xsl:value-of select="description"/>
+      <xsl:value-of select="description" />
       <br />
-      <b>Published</b>: <xsl:value-of select="publisher"/>, <xsl:value-of select="publish_date"/>
-      <p/>
+      <b>Published</b>: <xsl:value-of select="publisher" /><xsl:if test="publish_date">, <xsl:value-of select="publish_date" /></xsl:if>
+      <p />
 	</xsl:for-each>
     </table>
 
-    <p/>
+    <p />
+	</xsl:if>
 
-	<span class="header" style="font-weight:bold">EDUCATION</span><br/>
+	<span class="header" style="font-weight:bold">EDUCATION</span><br />
 	<xsl:for-each select="education/experience">
-	  <xsl:value-of select="start_date"/> - <xsl:value-of select="end_date"/><xsl:text> </xsl:text>
-	  <a href="{institution/url}"><xsl:value-of select="institution/name"/></a>
-      <xsl:text> </xsl:text><xsl:value-of select="institution/location"/><br />
+	  <xsl:if test="start_date and end_date"><xsl:value-of select="start_date" /> - <xsl:value-of select="end_date" /><xsl:text
+              > </xsl:text></xsl:if>
+	  <a href="{institution/url}"><xsl:value-of select="institution/name" /></a>
+      <xsl:text> </xsl:text><xsl:value-of select="institution/location" /><br />
       <xsl:if test="degree!=''">
-        <xsl:value-of select="degree"/><br />
+        <xsl:value-of select="degree" /><br />
       </xsl:if>
-	  <xsl:value-of select="highlights"/>
-	  <p/>
+	  <xsl:value-of select="highlights" />
+	  <p />
 	</xsl:for-each>
 
 
-	<p/>
+	<p />
 
 
-	<span class="header" style="font-weight:bold">REFERENCES</span><br/>
+	<span class="header" style="font-weight:bold">REFERENCES</span><br />
 	<xsl:for-each select="references/reference">
-	  <xsl:value-of select="."/>
+	  <xsl:value-of select="." />
 	</xsl:for-each>
 
 </div>

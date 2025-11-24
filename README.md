@@ -2,13 +2,13 @@ resume
 * * *
 
 Grahame Murray's resume, generated in multiple formats
-[![Build Status](https://travis-ci.org/gusnuf/resume.svg?branch=master)](https://travis-ci.org/gusnuf/resume)
+
+> [!IMPORTANT]
+> This repo is archived. https://github.com/gusnuf/grahame.com now includes this content
 
 ### Dependencies
 ant and fop are required
 
-
-### Running
 Edit `data/resume.xml` to contain the appropriate resume contents
 
 set the `FOP_HOME` environment variable to the root of the installed FOP
